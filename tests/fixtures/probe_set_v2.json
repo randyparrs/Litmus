@@ -1,0 +1,1572 @@
+{
+ "seed_rule": "keccak256(\"probe-set-v2-prototype-<i>\")",
+ "templates": {
+  "ledger": [
+   {
+    "seed_index": 0,
+    "seed": "770d75072f3483fdb4b2129f7b7d942a2b9f11521de5824fe00f76242b52d1a3",
+    "prompt": "Last month Lucia had sixty stamps. This week Zeynep starts with thirty-eight stamps. This week Hana starts with 26 stamps. This week Lucia starts with thirty-one stamps. Hana receives twenty-five stamps from Lucia. Lucia asks Zeynep to send over 21 stamps, and Zeynep refuses. Hana asks Zeynep to send over 20 stamps, and Zeynep refuses. Hana hands 14 stamps to Zeynep. Hana gives Lucia 15 stamps. No other stamps change hands. How many stamps does Lucia have at the end of the week? Respond with only the integer.",
+    "expected": "21",
+    "tries": 1
+   },
+   {
+    "seed_index": 1,
+    "seed": "bf350207fe59adc39c867d1ee2589e6f69f950caa5a2fbb46b5ba64870785ab8",
+    "prompt": "Last month Emeka had 51 coins. This week Emeka starts with 51 coins. This week Paulo starts with 46 coins. This week Ingrid starts with thirty coins. Emeka receives 21 coins from Paulo. Emeka receives 17 coins from Paulo. Paulo asks Emeka to send over twelve coins, and Emeka refuses. Emeka hands twenty-one coins to Ingrid. Emeka offers to give Paulo 9 coins, but Paulo turns the offer down. No other coins change hands. How many coins does Emeka have at the end of the week? Respond with only the integer.",
+    "expected": "68",
+    "tries": 1
+   },
+   {
+    "seed_index": 2,
+    "seed": "fa775c8339c4d0cc170d8fee0c22406f0f65e1bceec4fbf0a2d0211e5a76d767",
+    "prompt": "Last month Rafael had 50 shells. This week Nadia starts with 45 shells. This week Farah starts with fifty-five shells. This week Rafael starts with fourteen shells. Farah hands 11 shells to Nadia. Rafael hands 8 shells to Nadia. Farah gives Nadia half of the shells Farah has at that moment. Rafael asks Farah to send over twenty-nine shells, and Farah refuses. Rafael asks Nadia to send over 18 shells, and Nadia refuses. No other shells change hands. How many shells does Rafael have at the end of the week? Respond with only the integer.",
+    "expected": "6",
+    "tries": 1
+   },
+   {
+    "seed_index": 3,
+    "seed": "28246ae60e5dea02a04c4de56066bd4926cc0c32c1a46a3a6af07898ecd49f60",
+    "prompt": "Last month Vera had eight stamps. This week Chiara starts with sixty stamps. This week Ines starts with fifty-four stamps. This week Vera starts with 31 stamps. Vera receives thirteen stamps from Chiara. Ines gives Chiara twenty-two stamps. Ines asks Vera to send over 23 stamps, and Vera refuses. Ines plans to hand 4 stamps to Vera, then changes plans and keeps them. Vera receives eleven stamps from Ines. No other stamps change hands. How many stamps does Vera have at the end of the week? Respond with only the integer.",
+    "expected": "55",
+    "tries": 1
+   },
+   {
+    "seed_index": 4,
+    "seed": "a53fe2229512e41eeb4556e75151eff06efcd61b281100809f328e22f7d3b6ff",
+    "prompt": "Last month Yuki had forty-four coins. This week Yuki starts with 17 coins. This week Jonas starts with twenty-seven coins. This week Chiara starts with twenty-eight coins. Jonas asks Yuki to send over 5 coins, and Yuki refuses. Chiara receives twenty-three coins from Jonas. Chiara gives Yuki nineteen coins. Yuki asks Chiara to send over 24 coins, and Chiara refuses. Chiara hands six coins to Jonas. No other coins change hands. How many coins does Jonas have at the end of the week? Respond with only the integer.",
+    "expected": "10",
+    "tries": 2
+   },
+   {
+    "seed_index": 5,
+    "seed": "f465ff3176673a2904d8b5b92ce98ff3704b5e6db135364c6e08b13dd81c9134",
+    "prompt": "Last month Beatriz had sixty-three tickets. This week Lucia starts with thirty-three tickets. This week Zeynep starts with thirty-six tickets. This week Beatriz starts with twenty-two tickets. Beatriz gives Zeynep 12 tickets. Lucia plans to hand sixteen tickets to Zeynep, then changes plans and keeps them. Lucia offers to give Beatriz sixteen tickets, but Beatriz turns the offer down. Beatriz gives Zeynep half of the tickets Beatriz has at that moment. Lucia gives Beatriz ten tickets. No other tickets change hands. How many tickets does Lucia have at the end of the week? Respond with only the integer.",
+    "expected": "23",
+    "tries": 1
+   },
+   {
+    "seed_index": 6,
+    "seed": "f8891cd64ccb9d3ba6373856332e5edb9f0ef8cde00ca1f7f534522b03536ca6",
+    "prompt": "Last month Zeynep had 70 tokens. This week Nadia starts with 36 tokens. This week Zeynep starts with thirty-seven tokens. This week Teo starts with 23 tokens. Zeynep gives Nadia 25 tokens. Nadia offers to give Teo 26 tokens, but Teo turns the offer down. Zeynep plans to hand 11 tokens to Nadia, then changes plans and keeps them. Zeynep gives Nadia half of the tokens Zeynep has at that moment. Zeynep receives eleven tokens from Nadia. No other tokens change hands. How many tokens does Nadia have at the end of the week? Respond with only the integer.",
+    "expected": "56",
+    "tries": 1
+   },
+   {
+    "seed_index": 7,
+    "seed": "bf3324857ca08f8e23678d3e518349e74ae43aa62cecd09c62f96448f4d69525",
+    "prompt": "Last month Ivan had 68 stamps. This week Katya starts with twenty-two stamps. This week Anika starts with fifty-five stamps. This week Ivan starts with twenty-seven stamps. Katya receives 16 stamps from Ivan. Ivan offers to give Katya two stamps, but Katya turns the offer down. Ivan receives fourteen stamps from Anika. Katya gives Anika 21 stamps. Ivan offers to give Katya 23 stamps, but Katya turns the offer down. No other stamps change hands. How many stamps does Ivan have at the end of the week? Respond with only the integer.",
+    "expected": "25",
+    "tries": 1
+   },
+   {
+    "seed_index": 8,
+    "seed": "15c82e87a12f5b1c2493adbcc1fd0b010c5846d227a50aaf1032b89d84b02350",
+    "prompt": "Last month Goran had 43 tickets. This week Teo starts with fifty-one tickets. This week Yara starts with 20 tickets. This week Goran starts with 33 tickets. Goran asks Yara to send over twenty-three tickets, and Yara refuses. Goran gives Yara 24 tickets. Teo gives Yara 7 tickets. Yara offers to give Goran 9 tickets, but Goran turns the offer down. Teo receives three tickets from Goran. No other tickets change hands. How many tickets does Goran have at the end of the week? Respond with only the integer.",
+    "expected": "6",
+    "tries": 1
+   },
+   {
+    "seed_index": 9,
+    "seed": "3852b5d0a469fe537a0c3dc954d266460733ae065a2844cdcc0275f88f7f2a24",
+    "prompt": "Last month Omar had fifty-five tickets. This week Rafael starts with 39 tickets. This week Omar starts with 22 tickets. This week Leila starts with nineteen tickets. Omar asks Rafael to send over twenty tickets, and Rafael refuses. Omar gives Rafael half of the tickets Omar has at that moment. Omar plans to hand 30 tickets to Rafael, then changes plans and keeps them. Omar gives Rafael three tickets. Leila receives 5 tickets from Omar. No other tickets change hands. How many tickets does Omar have at the end of the week? Respond with only the integer.",
+    "expected": "3",
+    "tries": 2
+   },
+   {
+    "seed_index": 10,
+    "seed": "ca84f4e2fada5a7bd7a1a8cc5cee3b8b23a97b42cfcb87065031caf899134f00",
+    "prompt": "Last month Umar had seventy-five tokens. This week Nikos starts with thirty-six tokens. This week Umar starts with forty-six tokens. This week Hana starts with forty-five tokens. Nikos receives twenty-five tokens from Hana. Hana offers to give Nikos seven tokens, but Nikos turns the offer down. Umar gives Nikos half of the tokens Umar has at that moment. Nikos gives Hana 6 tokens. Nikos offers to give Hana 21 tokens, but Hana turns the offer down. No other tokens change hands. How many tokens does Hana have at the end of the week? Respond with only the integer.",
+    "expected": "26",
+    "tries": 1
+   },
+   {
+    "seed_index": 11,
+    "seed": "18dbbb1e64aae3559f7b2606e821dc68e35dfe2bb462738c8362fbe60cb4a3f9",
+    "prompt": "Last month Bruno had fifty-two stamps. This week Olga starts with 32 stamps. This week Bruno starts with 35 stamps. This week Farah starts with 22 stamps. Olga receives eight stamps from Bruno. Olga plans to hand 26 stamps to Farah, then changes plans and keeps them. Farah gives Bruno half of the stamps Farah has at that moment. Farah hands seven stamps to Olga. Bruno plans to hand twenty-three stamps to Olga, then changes plans and keeps them. No other stamps change hands. How many stamps does Olga have at the end of the week? Respond with only the integer.",
+    "expected": "47",
+    "tries": 1
+   },
+   {
+    "seed_index": 12,
+    "seed": "3fd1a852026c7add3003bacb0305f795ed48fa1972091c57b44942b87de9e8f9",
+    "prompt": "Last month Tomas had 37 stamps. This week Olga starts with 41 stamps. This week Tomas starts with 39 stamps. This week Nadia starts with 47 stamps. Tomas gives Nadia nineteen stamps. Olga plans to hand 29 stamps to Tomas, then changes plans and keeps them. Olga asks Tomas to send over 9 stamps, and Tomas refuses. Tomas hands ten stamps to Olga. Nadia hands twenty-three stamps to Tomas. No other stamps change hands. How many stamps does Olga have at the end of the week? Respond with only the integer.",
+    "expected": "51",
+    "tries": 1
+   },
+   {
+    "seed_index": 13,
+    "seed": "38759d556e47626d8944ca784b02822db3eef2f37edcd75eeff7b24e711875ac",
+    "prompt": "Last month Ivan had forty-eight tokens. This week Kofi starts with 28 tokens. This week Ivan starts with fifty-seven tokens. This week Anika starts with twenty-eight tokens. Kofi asks Ivan to send over 30 tokens, and Ivan refuses. Ivan asks Anika to send over 24 tokens, and Anika refuses. Ivan gives Kofi 22 tokens. Ivan hands seven tokens to Kofi. Ivan receives 22 tokens from Kofi. No other tokens change hands. How many tokens does Kofi have at the end of the week? Respond with only the integer.",
+    "expected": "35",
+    "tries": 1
+   },
+   {
+    "seed_index": 14,
+    "seed": "1f5bf7fca6040f298daa5d6e1866b207358b664a8734126bf3b913f7020dc5b3",
+    "prompt": "Last month Ruth had fifty-eight tokens. This week Ruth starts with fifty-eight tokens. This week Teo starts with thirty-one tokens. This week Ivan starts with 17 tokens. Ruth gives Ivan half of the tokens Ruth has at that moment. Ivan receives twenty-three tokens from Ruth. Ivan gives Ruth 22 tokens. Ruth asks Ivan to send over 20 tokens, and Ivan refuses. Ruth offers to give Teo 5 tokens, but Teo turns the offer down. No other tokens change hands. How many tokens does Ruth have at the end of the week? Respond with only the integer.",
+    "expected": "28",
+    "tries": 1
+   },
+   {
+    "seed_index": 15,
+    "seed": "2b2437ed40da7e350d3ff06320e3b1c45e34a5bada3a003264c9186f968fb15f",
+    "prompt": "Last month Tomas had thirteen stamps. This week Anika starts with thirty-two stamps. This week Tomas starts with fourteen stamps. This week Umar starts with 35 stamps. Anika gives Tomas half of the stamps Anika has at that moment. Anika receives six stamps from Umar. Umar asks Tomas to send over twenty-nine stamps, and Tomas refuses. Anika plans to hand 3 stamps to Umar, then changes plans and keeps them. Umar receives 11 stamps from Anika. No other stamps change hands. How many stamps does Umar have at the end of the week? Respond with only the integer.",
+    "expected": "40",
+    "tries": 1
+   },
+   {
+    "seed_index": 16,
+    "seed": "56e0748e721cd76407e21a797b2fc611af9ab71e0d32c48e512178ada462ac2b",
+    "prompt": "Last month Bruno had forty-nine coins. This week Ruth starts with thirty-seven coins. This week Ivan starts with thirty-four coins. This week Bruno starts with thirty coins. Ivan gives Bruno nine coins. Ruth asks Bruno to send over 2 coins, and Bruno refuses. Bruno offers to give Ivan 3 coins, but Ivan turns the offer down. Ruth hands 8 coins to Bruno. Bruno hands 11 coins to Ivan. No other coins change hands. How many coins does Bruno have at the end of the week? Respond with only the integer.",
+    "expected": "36",
+    "tries": 1
+   },
+   {
+    "seed_index": 17,
+    "seed": "da6c632c8c1e8821327939f4bdc19f6bb34c8f39f29318a9671ba48c235008d5",
+    "prompt": "Last month Arjun had 78 stamps. This week Tomas starts with 53 stamps. This week Yara starts with sixty stamps. This week Arjun starts with thirty-two stamps. Tomas plans to hand 10 stamps to Yara, then changes plans and keeps them. Tomas receives eight stamps from Arjun. Arjun gives Tomas 3 stamps. Yara offers to give Arjun seventeen stamps, but Arjun turns the offer down. Tomas hands 3 stamps to Arjun. No other stamps change hands. How many stamps does Arjun have at the end of the week? Respond with only the integer.",
+    "expected": "24",
+    "tries": 1
+   },
+   {
+    "seed_index": 18,
+    "seed": "36145fa8d7644dc0174a2d4241019dbc4f102a93df38e67b18c338d8003fa390",
+    "prompt": "Last month Jonas had 13 stamps. This week Dario starts with thirty-nine stamps. This week Xavier starts with twenty-seven stamps. This week Jonas starts with forty-four stamps. Dario receives 7 stamps from Xavier. Dario gives Xavier fourteen stamps. Jonas gives Xavier half of the stamps Jonas has at that moment. Xavier plans to hand twenty-one stamps to Dario, then changes plans and keeps them. Jonas asks Xavier to send over 16 stamps, and Xavier refuses. No other stamps change hands. How many stamps does Xavier have at the end of the week? Respond with only the integer.",
+    "expected": "56",
+    "tries": 2
+   },
+   {
+    "seed_index": 19,
+    "seed": "81cd4c330a3f361284ff8e97a2da910b37cde2e8c3fd77b25d3d58050d2288df",
+    "prompt": "Last month Wanjiru had twenty-one coins. This week Wanjiru starts with 26 coins. This week Ivan starts with twelve coins. This week Hana starts with 37 coins. Hana hands eighteen coins to Wanjiru. Ivan gives Wanjiru 3 coins. Hana offers to give Ivan 12 coins, but Ivan turns the offer down. Ivan hands 4 coins to Wanjiru. Hana asks Ivan to send over fifteen coins, and Ivan refuses. No other coins change hands. How many coins does Ivan have at the end of the week? Respond with only the integer.",
+    "expected": "5",
+    "tries": 1
+   },
+   {
+    "seed_index": 20,
+    "seed": "fc6db3f537999841206a80707d54efce157430b92db5407ecc694121dc321fe9",
+    "prompt": "Last month Omar had 22 shells. This week Nikos starts with twenty-six shells. This week Rafael starts with 55 shells. This week Omar starts with 40 shells. Nikos gives Rafael fourteen shells. Omar plans to hand 20 shells to Rafael, then changes plans and keeps them. Omar hands sixteen shells to Rafael. Omar offers to give Rafael twenty-two shells, but Rafael turns the offer down. Nikos receives 13 shells from Rafael. No other shells change hands. How many shells does Omar have at the end of the week? Respond with only the integer.",
+    "expected": "24",
+    "tries": 1
+   },
+   {
+    "seed_index": 21,
+    "seed": "2110ac050b2da0f31a95814870b73fc27daf097e682f5e4d5a5bf05380076b48",
+    "prompt": "Last month Chiara had 67 tickets. This week Beatriz starts with 12 tickets. This week Chiara starts with eighteen tickets. This week Talia starts with 52 tickets. Beatriz gives Talia half of the tickets Beatriz has at that moment. Chiara plans to hand twenty tickets to Beatriz, then changes plans and keeps them. Chiara gives Beatriz half of the tickets Chiara has at that moment. Talia gives Beatriz half of the tickets Talia has at that moment. Beatriz plans to hand 23 tickets to Talia, then changes plans and keeps them. No other tickets change hands. How many tickets does Beatriz have at the end of the week? Respond with only the integer.",
+    "expected": "44",
+    "tries": 2
+   },
+   {
+    "seed_index": 22,
+    "seed": "dde039c87d205ccb3c44ece2538d2149aa0b174c4fcba76a006b09427512b3f5",
+    "prompt": "Last month Lars had sixty-five tickets. This week Lars starts with 19 tickets. This week Katya starts with 35 tickets. This week Dario starts with 50 tickets. Lars offers to give Katya 8 tickets, but Katya turns the offer down. Lars gives Dario ten tickets. Katya receives three tickets from Lars. Dario gives Katya 24 tickets. Katya plans to hand three tickets to Lars, then changes plans and keeps them. No other tickets change hands. How many tickets does Lars have at the end of the week? Respond with only the integer.",
+    "expected": "6",
+    "tries": 1
+   },
+   {
+    "seed_index": 23,
+    "seed": "56955a422e32bda78fc736db3510c52815bd26ba331d26cbde9949610cc19c93",
+    "prompt": "Last month Zeynep had fifty-nine stamps. This week Mehmet starts with forty-seven stamps. This week Zeynep starts with forty-five stamps. This week Umar starts with fifty-two stamps. Zeynep asks Umar to send over twenty-one stamps, and Umar refuses. Mehmet hands 14 stamps to Umar. Mehmet receives 17 stamps from Umar. Umar offers to give Zeynep 10 stamps, but Zeynep turns the offer down. Zeynep hands twelve stamps to Umar. No other stamps change hands. How many stamps does Umar have at the end of the week? Respond with only the integer.",
+    "expected": "61",
+    "tries": 3
+   },
+   {
+    "seed_index": 24,
+    "seed": "d98561ae39a6c723f8258c6432040c2a3720daa1596b359e6ceb21310ac1e1e8",
+    "prompt": "Last month Vera had sixty-five tickets. This week Mara starts with fifty-three tickets. This week Beatriz starts with twenty-one tickets. This week Vera starts with twenty-seven tickets. Vera gives Beatriz 12 tickets. Mara offers to give Vera two tickets, but Vera turns the offer down. Mara gives Vera 9 tickets. Beatriz hands 24 tickets to Vera. Beatriz plans to hand twenty-six tickets to Vera, then changes plans and keeps them. No other tickets change hands. How many tickets does Vera have at the end of the week? Respond with only the integer.",
+    "expected": "48",
+    "tries": 3
+   }
+  ],
+  "schedule": [
+   {
+    "seed_index": 0,
+    "seed": "770d75072f3483fdb4b2129f7b7d942a2b9f11521de5824fe00f76242b52d1a3",
+    "prompt": "In the south hall, the briefing starts at 10:30. The site visit starts three quarters of an hour after the briefing starts. The inspection starts forty minutes after the site visit starts. In the north hall, the budget meeting starts at 09:00. The workshop starts twenty minutes before the budget meeting starts. The supplier call starts a quarter of an hour before the workshop starts. Afterwards, the workshop is rescheduled to start 50 minutes later than planned. At what time does the workshop in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "09:30",
+    "tries": 1
+   },
+   {
+    "seed_index": 1,
+    "seed": "bf350207fe59adc39c867d1ee2589e6f69f950caa5a2fbb46b5ba64870785ab8",
+    "prompt": "In the east wing, the workshop starts at 13:00. The handover starts ten minutes before the workshop starts. The supplier call starts 50 minutes after the handover starts. In the north hall, the briefing starts at 15:00. The inspection starts ten minutes before the briefing starts. The budget meeting starts twenty minutes after the inspection starts. Afterwards, the inspection is rescheduled to start an hour later than planned. At what time does the inspection in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "15:50",
+    "tries": 1
+   },
+   {
+    "seed_index": 2,
+    "seed": "fa775c8339c4d0cc170d8fee0c22406f0f65e1bceec4fbf0a2d0211e5a76d767",
+    "prompt": "In the south hall, the handover starts at 11:30. The review starts 25 minutes before the handover starts. The briefing starts 35 minutes after the review starts. In the west wing, the budget meeting starts at 14:30. The demo starts an hour and a half before the budget meeting starts. The inspection starts an hour before the demo starts. Afterwards, the review is rescheduled to start a quarter of an hour earlier than planned. At what time does the review in the south hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "10:50",
+    "tries": 1
+   },
+   {
+    "seed_index": 3,
+    "seed": "28246ae60e5dea02a04c4de56066bd4926cc0c32c1a46a3a6af07898ecd49f60",
+    "prompt": "In the south hall, the supplier call starts at 10:45. The review starts forty minutes after the supplier call starts. The budget meeting starts an hour and a half after the review starts. In the north hall, the tasting starts at 12:00. The site visit starts ten minutes after the tasting starts. The demo starts forty minutes after the site visit starts. At what time does the site visit in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "12:10",
+    "tries": 1
+   },
+   {
+    "seed_index": 4,
+    "seed": "a53fe2229512e41eeb4556e75151eff06efcd61b281100809f328e22f7d3b6ff",
+    "prompt": "In the west wing, the workshop starts at 14:45. The handover starts ten minutes before the workshop starts. The safety drill starts an hour after the handover starts. In the north hall, the interview starts at 14:30. The demo starts half an hour before the interview starts. The stand-up starts 35 minutes before the demo starts. At what time does the safety drill in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "15:35",
+    "tries": 1
+   },
+   {
+    "seed_index": 5,
+    "seed": "f465ff3176673a2904d8b5b92ce98ff3704b5e6db135364c6e08b13dd81c9134",
+    "prompt": "In the south hall, the budget meeting starts at 15:00. The interview starts three quarters of an hour before the budget meeting starts. The review starts twenty minutes before the interview starts. In the west wing, the rehearsal starts at 13:30. The supplier call starts a quarter of an hour before the rehearsal starts. The inspection starts ten minutes before the supplier call starts. Afterwards, the interview is rescheduled to start half an hour earlier than planned. At what time does the interview in the south hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "13:45",
+    "tries": 1
+   },
+   {
+    "seed_index": 6,
+    "seed": "f8891cd64ccb9d3ba6373856332e5edb9f0ef8cde00ca1f7f534522b03536ca6",
+    "prompt": "In the north hall, the site visit starts at 12:00. The handover starts a quarter of an hour after the site visit starts. The budget meeting starts an hour before the handover starts. In the south hall, the stand-up starts at 11:15. The rehearsal starts three quarters of an hour before the stand-up starts. The safety drill starts an hour after the rehearsal starts. At what time does the rehearsal in the south hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "10:30",
+    "tries": 1
+   },
+   {
+    "seed_index": 7,
+    "seed": "bf3324857ca08f8e23678d3e518349e74ae43aa62cecd09c62f96448f4d69525",
+    "prompt": "In the south hall, the handover starts at 09:15. The review starts forty minutes before the handover starts. The briefing starts 50 minutes before the review starts. In the east wing, the safety drill starts at 15:45. The demo starts 35 minutes before the safety drill starts. The rehearsal starts three quarters of an hour after the demo starts. At what time does the rehearsal in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "15:55",
+    "tries": 1
+   },
+   {
+    "seed_index": 8,
+    "seed": "15c82e87a12f5b1c2493adbcc1fd0b010c5846d227a50aaf1032b89d84b02350",
+    "prompt": "In the north hall, the supplier call starts at 12:15. The workshop starts forty minutes after the supplier call starts. The interview starts 35 minutes after the workshop starts. In the west wing, the stand-up starts at 11:15. The inspection starts three quarters of an hour after the stand-up starts. The budget meeting starts half an hour after the inspection starts. At what time does the workshop in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "12:55",
+    "tries": 1
+   },
+   {
+    "seed_index": 9,
+    "seed": "3852b5d0a469fe537a0c3dc954d266460733ae065a2844cdcc0275f88f7f2a24",
+    "prompt": "In the east wing, the interview starts at 09:30. The safety drill starts an hour and a half after the interview starts. The stand-up starts half an hour after the safety drill starts. In the north hall, the tasting starts at 10:15. The demo starts three quarters of an hour after the tasting starts. The review starts 25 minutes before the demo starts. Afterwards, the review is rescheduled to start a quarter of an hour later than planned. At what time does the review in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "10:50",
+    "tries": 1
+   },
+   {
+    "seed_index": 10,
+    "seed": "ca84f4e2fada5a7bd7a1a8cc5cee3b8b23a97b42cfcb87065031caf899134f00",
+    "prompt": "In the west wing, the briefing starts at 09:15. The tasting starts 35 minutes before the briefing starts. The rehearsal starts 50 minutes before the tasting starts. In the south hall, the budget meeting starts at 09:45. The supplier call starts an hour before the budget meeting starts. The interview starts 25 minutes after the supplier call starts. At what time does the supplier call in the south hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "08:45",
+    "tries": 1
+   },
+   {
+    "seed_index": 11,
+    "seed": "18dbbb1e64aae3559f7b2606e821dc68e35dfe2bb462738c8362fbe60cb4a3f9",
+    "prompt": "In the west wing, the budget meeting starts at 12:30. The tasting starts half an hour before the budget meeting starts. The review starts an hour after the tasting starts. In the south hall, the briefing starts at 10:00. The rehearsal starts 35 minutes after the briefing starts. The safety drill starts forty minutes before the rehearsal starts. At what time does the review in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "13:00",
+    "tries": 1
+   },
+   {
+    "seed_index": 12,
+    "seed": "3fd1a852026c7add3003bacb0305f795ed48fa1972091c57b44942b87de9e8f9",
+    "prompt": "In the west wing, the budget meeting starts at 13:45. The safety drill starts an hour after the budget meeting starts. The supplier call starts three quarters of an hour before the safety drill starts. In the east wing, the inspection starts at 15:45. The tasting starts an hour after the inspection starts. The briefing starts a quarter of an hour before the tasting starts. Afterwards, the briefing is rescheduled to start a quarter of an hour earlier than planned. At what time does the briefing in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "16:15",
+    "tries": 1
+   },
+   {
+    "seed_index": 13,
+    "seed": "38759d556e47626d8944ca784b02822db3eef2f37edcd75eeff7b24e711875ac",
+    "prompt": "In the south hall, the handover starts at 11:30. The stand-up starts 35 minutes after the handover starts. The supplier call starts twenty minutes after the stand-up starts. In the west wing, the interview starts at 11:45. The workshop starts a quarter of an hour after the interview starts. The inspection starts 25 minutes after the workshop starts. At what time does the supplier call in the south hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "12:25",
+    "tries": 2
+   },
+   {
+    "seed_index": 14,
+    "seed": "1f5bf7fca6040f298daa5d6e1866b207358b664a8734126bf3b913f7020dc5b3",
+    "prompt": "In the east wing, the tasting starts at 13:45. The inspection starts forty minutes before the tasting starts. The demo starts an hour before the inspection starts. In the north hall, the stand-up starts at 11:30. The supplier call starts ten minutes after the stand-up starts. The safety drill starts forty minutes before the supplier call starts. Afterwards, the safety drill is rescheduled to start 50 minutes later than planned. At what time does the safety drill in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "11:50",
+    "tries": 1
+   },
+   {
+    "seed_index": 15,
+    "seed": "2b2437ed40da7e350d3ff06320e3b1c45e34a5bada3a003264c9186f968fb15f",
+    "prompt": "In the north hall, the budget meeting starts at 15:15. The demo starts an hour and a half before the budget meeting starts. The supplier call starts twenty minutes before the demo starts. In the east wing, the safety drill starts at 14:45. The stand-up starts twenty minutes before the safety drill starts. The inspection starts 50 minutes after the stand-up starts. Afterwards, the demo is rescheduled to start 50 minutes later than planned. At what time does the demo in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "14:35",
+    "tries": 1
+   },
+   {
+    "seed_index": 16,
+    "seed": "56e0748e721cd76407e21a797b2fc611af9ab71e0d32c48e512178ada462ac2b",
+    "prompt": "In the north hall, the interview starts at 12:30. The budget meeting starts an hour and a half after the interview starts. The stand-up starts an hour before the budget meeting starts. In the east wing, the tasting starts at 13:15. The safety drill starts forty minutes before the tasting starts. The review starts an hour after the safety drill starts. At what time does the review in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "13:35",
+    "tries": 1
+   },
+   {
+    "seed_index": 17,
+    "seed": "da6c632c8c1e8821327939f4bdc19f6bb34c8f39f29318a9671ba48c235008d5",
+    "prompt": "In the east wing, the interview starts at 13:00. The stand-up starts 35 minutes before the interview starts. The budget meeting starts an hour and a half before the stand-up starts. In the south hall, the inspection starts at 12:00. The rehearsal starts 25 minutes before the inspection starts. The workshop starts twenty minutes after the rehearsal starts. Afterwards, the stand-up is rescheduled to start forty minutes earlier than planned. At what time does the stand-up in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "11:45",
+    "tries": 1
+   },
+   {
+    "seed_index": 18,
+    "seed": "36145fa8d7644dc0174a2d4241019dbc4f102a93df38e67b18c338d8003fa390",
+    "prompt": "In the north hall, the demo starts at 13:00. The safety drill starts a quarter of an hour after the demo starts. The handover starts an hour after the safety drill starts. In the east wing, the workshop starts at 11:30. The site visit starts an hour and a half before the workshop starts. The inspection starts 50 minutes before the site visit starts. At what time does the site visit in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "10:00",
+    "tries": 1
+   },
+   {
+    "seed_index": 19,
+    "seed": "81cd4c330a3f361284ff8e97a2da910b37cde2e8c3fd77b25d3d58050d2288df",
+    "prompt": "In the south hall, the site visit starts at 14:00. The budget meeting starts 35 minutes before the site visit starts. The tasting starts an hour after the budget meeting starts. In the north hall, the review starts at 09:15. The workshop starts a quarter of an hour before the review starts. The handover starts an hour after the workshop starts. Afterwards, the tasting is rescheduled to start half an hour earlier than planned. At what time does the tasting in the south hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "13:55",
+    "tries": 1
+   },
+   {
+    "seed_index": 20,
+    "seed": "fc6db3f537999841206a80707d54efce157430b92db5407ecc694121dc321fe9",
+    "prompt": "In the west wing, the rehearsal starts at 10:15. The site visit starts 25 minutes after the rehearsal starts. The tasting starts ten minutes before the site visit starts. In the south hall, the inspection starts at 09:45. The briefing starts forty minutes after the inspection starts. The handover starts 35 minutes before the briefing starts. At what time does the tasting in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "10:30",
+    "tries": 2
+   },
+   {
+    "seed_index": 21,
+    "seed": "2110ac050b2da0f31a95814870b73fc27daf097e682f5e4d5a5bf05380076b48",
+    "prompt": "In the east wing, the tasting starts at 14:15. The workshop starts forty minutes after the tasting starts. The briefing starts ten minutes before the workshop starts. In the north hall, the stand-up starts at 12:00. The demo starts twenty minutes before the stand-up starts. The supplier call starts twenty minutes before the demo starts. At what time does the briefing in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "14:45",
+    "tries": 1
+   },
+   {
+    "seed_index": 22,
+    "seed": "dde039c87d205ccb3c44ece2538d2149aa0b174c4fcba76a006b09427512b3f5",
+    "prompt": "In the north hall, the supplier call starts at 14:00. The demo starts ten minutes after the supplier call starts. The interview starts forty minutes after the demo starts. In the west wing, the review starts at 11:00. The rehearsal starts an hour after the review starts. The briefing starts forty minutes after the rehearsal starts. Afterwards, the rehearsal is rescheduled to start forty minutes later than planned. At what time does the rehearsal in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "12:40",
+    "tries": 1
+   },
+   {
+    "seed_index": 23,
+    "seed": "56955a422e32bda78fc736db3510c52815bd26ba331d26cbde9949610cc19c93",
+    "prompt": "In the west wing, the safety drill starts at 09:30. The stand-up starts three quarters of an hour before the safety drill starts. The interview starts an hour after the stand-up starts. In the south hall, the review starts at 13:00. The workshop starts a quarter of an hour before the review starts. The budget meeting starts forty minutes after the workshop starts. Afterwards, the workshop is rescheduled to start forty minutes earlier than planned. At what time does the workshop in the south hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "12:05",
+    "tries": 1
+   },
+   {
+    "seed_index": 24,
+    "seed": "d98561ae39a6c723f8258c6432040c2a3720daa1596b359e6ceb21310ac1e1e8",
+    "prompt": "In the east wing, the review starts at 11:15. The inspection starts 25 minutes before the review starts. The tasting starts half an hour before the inspection starts. In the south hall, the demo starts at 12:30. The briefing starts 35 minutes after the demo starts. The budget meeting starts forty minutes after the briefing starts. Afterwards, the briefing is rescheduled to start twenty minutes earlier than planned. At what time does the briefing in the south hall start? Respond with only the time, in 24-hour HH:MM format.",
+    "expected": "12:45",
+    "tries": 1
+   }
+  ],
+  "attribution": [
+   {
+    "seed_index": 0,
+    "seed": "770d75072f3483fdb4b2129f7b7d942a2b9f11521de5824fe00f76242b52d1a3",
+    "prompt": "Reports came in from eight analysts this morning. Leila filed at 09:41 and revised it twice. Chiara filed at 09:52 and revised it twice. Ruth filed at 08:50 and revised it four times. Kofi filed at 10:37 and never revised it. Nikos filed at 08:46 and never revised it. Xavier filed at 10:19 and revised it three times. Farah filed at 10:14 and never revised it. Teo filed at 09:46 and never revised it. Among the analysts who revised their report at least three times, who filed latest? Respond with only the name.",
+    "expected": "Xavier",
+    "tries": 1
+   },
+   {
+    "seed_index": 1,
+    "seed": "bf350207fe59adc39c867d1ee2589e6f69f950caa5a2fbb46b5ba64870785ab8",
+    "prompt": "Reports came in from seven analysts this morning. Wanjiru filed at 08:55 and revised it three times. Ingrid filed at 08:14 and revised it four times. Mehmet filed at 09:29 and never revised it. Omar filed at 08:12 and revised it three times. Yuki filed at 08:29 and never revised it. Vera filed at 09:07 and revised it twice. Beatriz filed at 10:30 and revised it twice. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+    "expected": "Mehmet",
+    "tries": 1
+   },
+   {
+    "seed_index": 2,
+    "seed": "fa775c8339c4d0cc170d8fee0c22406f0f65e1bceec4fbf0a2d0211e5a76d767",
+    "prompt": "Reports came in from eight analysts this morning. Rafael filed at 09:51 and never revised it. Emeka filed at 09:54 and revised it four times. Zeynep filed at 10:05 and revised it once. Yara filed at 09:29 and revised it twice. Vera filed at 10:48 and revised it twice. Chiara filed at 08:31 and revised it twice. Dario filed at 08:34 and never revised it. Lars filed at 08:27 and revised it four times. Among the analysts who revised their report at most once, who filed earliest? Respond with only the name.",
+    "expected": "Dario",
+    "tries": 1
+   },
+   {
+    "seed_index": 3,
+    "seed": "28246ae60e5dea02a04c4de56066bd4926cc0c32c1a46a3a6af07898ecd49f60",
+    "prompt": "Reports came in from eight analysts this morning. Leila filed at 08:27 and revised it once. Nadia filed at 08:20 and never revised it. Nikos filed at 08:46 and revised it once. Emeka filed at 08:07 and revised it once. Sanjay filed at 09:26 and revised it once. Arjun filed at 09:57 and revised it four times. Teo filed at 09:03 and revised it three times. Tomas filed at 10:50 and revised it twice. Among the analysts who revised their report exactly once, who filed latest? Respond with only the name.",
+    "expected": "Sanjay",
+    "tries": 1
+   },
+   {
+    "seed_index": 4,
+    "seed": "a53fe2229512e41eeb4556e75151eff06efcd61b281100809f328e22f7d3b6ff",
+    "prompt": "Reports came in from eight analysts this morning. Emeka filed at 08:50 and revised it once. Priya filed at 08:25 and revised it twice. Goran filed at 09:13 and revised it three times. Ruth filed at 08:27 and revised it once. Vera filed at 08:59 and never revised it. Talia filed at 08:24 and revised it three times. Nadia filed at 09:37 and revised it three times. Ines filed at 08:01 and revised it twice. Among the analysts who revised their report at least three times, who filed earliest? Respond with only the name.",
+    "expected": "Talia",
+    "tries": 1
+   },
+   {
+    "seed_index": 5,
+    "seed": "f465ff3176673a2904d8b5b92ce98ff3704b5e6db135364c6e08b13dd81c9134",
+    "prompt": "Reports came in from eight analysts this morning. Zeynep filed at 09:11 and never revised it. Dario filed at 09:06 and revised it once. Goran filed at 10:09 and revised it three times. Lucia filed at 08:09 and revised it twice. Priya filed at 09:30 and revised it three times. Anika filed at 10:43 and revised it three times. Jonas filed at 09:09 and revised it three times. Olga filed at 09:02 and revised it three times. Among the analysts who revised their report at most once, who filed earliest? Respond with only the name.",
+    "expected": "Dario",
+    "tries": 1
+   },
+   {
+    "seed_index": 6,
+    "seed": "f8891cd64ccb9d3ba6373856332e5edb9f0ef8cde00ca1f7f534522b03536ca6",
+    "prompt": "Reports came in from seven analysts this morning. Tomas filed at 10:46 and revised it once. Kofi filed at 08:43 and revised it three times. Omar filed at 08:28 and revised it twice. Umar filed at 10:45 and revised it once. Leila filed at 09:43 and revised it three times. Jonas filed at 09:51 and revised it twice. Yara filed at 10:50 and never revised it. Among the analysts who revised their report exactly once, who filed earliest? Respond with only the name.",
+    "expected": "Umar",
+    "tries": 1
+   },
+   {
+    "seed_index": 7,
+    "seed": "bf3324857ca08f8e23678d3e518349e74ae43aa62cecd09c62f96448f4d69525",
+    "prompt": "Reports came in from eight analysts this morning. Ivan filed at 09:55 and revised it once. Hana filed at 08:22 and revised it once. Olga filed at 09:25 and revised it once. Lucia filed at 10:59 and revised it once. Ines filed at 08:03 and revised it four times. Umar filed at 08:04 and revised it four times. Jonas filed at 08:00 and revised it twice. Wanjiru filed at 09:17 and revised it twice. Among the analysts who revised their report at most once, who filed earliest? Respond with only the name.",
+    "expected": "Hana",
+    "tries": 1
+   },
+   {
+    "seed_index": 8,
+    "seed": "15c82e87a12f5b1c2493adbcc1fd0b010c5846d227a50aaf1032b89d84b02350",
+    "prompt": "Reports came in from seven analysts this morning. Yara filed at 10:46 and revised it four times. Lucia filed at 08:12 and revised it twice. Ingrid filed at 10:10 and revised it once. Olga filed at 08:15 and never revised it. Omar filed at 09:07 and revised it once. Farah filed at 08:17 and revised it three times. Arjun filed at 09:58 and never revised it. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+    "expected": "Ingrid",
+    "tries": 1
+   },
+   {
+    "seed_index": 9,
+    "seed": "3852b5d0a469fe537a0c3dc954d266460733ae065a2844cdcc0275f88f7f2a24",
+    "prompt": "Reports came in from seven analysts this morning. Zeynep filed at 09:43 and revised it twice. Dario filed at 08:22 and never revised it. Nikos filed at 08:08 and revised it three times. Umar filed at 08:01 and revised it once. Arjun filed at 10:49 and revised it twice. Priya filed at 09:20 and revised it three times. Goran filed at 09:31 and revised it three times. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+    "expected": "Dario",
+    "tries": 1
+   },
+   {
+    "seed_index": 10,
+    "seed": "ca84f4e2fada5a7bd7a1a8cc5cee3b8b23a97b42cfcb87065031caf899134f00",
+    "prompt": "Reports came in from eight analysts this morning. Paulo filed at 08:07 and revised it four times. Ingrid filed at 10:35 and revised it once. Tomas filed at 10:59 and never revised it. Katya filed at 10:25 and revised it three times. Yuki filed at 09:50 and revised it four times. Umar filed at 09:54 and revised it twice. Rafael filed at 09:28 and revised it once. Farah filed at 09:22 and revised it twice. Among the analysts who revised their report at most once, who filed earliest? Respond with only the name.",
+    "expected": "Rafael",
+    "tries": 1
+   },
+   {
+    "seed_index": 11,
+    "seed": "18dbbb1e64aae3559f7b2606e821dc68e35dfe2bb462738c8362fbe60cb4a3f9",
+    "prompt": "Reports came in from eight analysts this morning. Omar filed at 10:55 and revised it once. Vera filed at 08:48 and never revised it. Goran filed at 08:05 and revised it three times. Yara filed at 08:58 and revised it four times. Nadia filed at 10:21 and revised it once. Farah filed at 08:42 and revised it three times. Ruth filed at 08:37 and revised it three times. Leila filed at 09:39 and never revised it. Among the analysts who revised their report exactly once, who filed earliest? Respond with only the name.",
+    "expected": "Nadia",
+    "tries": 1
+   },
+   {
+    "seed_index": 12,
+    "seed": "3fd1a852026c7add3003bacb0305f795ed48fa1972091c57b44942b87de9e8f9",
+    "prompt": "Reports came in from eight analysts this morning. Arjun filed at 09:23 and revised it once. Bruno filed at 09:05 and never revised it. Omar filed at 09:26 and never revised it. Lucia filed at 08:52 and revised it four times. Teo filed at 09:29 and revised it once. Beatriz filed at 08:22 and revised it three times. Olga filed at 10:15 and never revised it. Ingrid filed at 08:05 and revised it once. Among the analysts who revised their report at least twice, who filed latest? Respond with only the name.",
+    "expected": "Lucia",
+    "tries": 1
+   },
+   {
+    "seed_index": 13,
+    "seed": "38759d556e47626d8944ca784b02822db3eef2f37edcd75eeff7b24e711875ac",
+    "prompt": "Reports came in from eight analysts this morning. Beatriz filed at 10:49 and revised it four times. Vera filed at 08:43 and revised it once. Umar filed at 09:48 and never revised it. Goran filed at 09:15 and revised it three times. Farah filed at 08:11 and revised it four times. Dario filed at 09:20 and revised it three times. Ruth filed at 08:06 and never revised it. Kofi filed at 08:54 and revised it once. Among the analysts who revised their report exactly once, who filed earliest? Respond with only the name.",
+    "expected": "Vera",
+    "tries": 1
+   },
+   {
+    "seed_index": 14,
+    "seed": "1f5bf7fca6040f298daa5d6e1866b207358b664a8734126bf3b913f7020dc5b3",
+    "prompt": "Reports came in from seven analysts this morning. Xavier filed at 10:25 and revised it four times. Lucia filed at 10:36 and never revised it. Dario filed at 08:05 and revised it twice. Nikos filed at 09:03 and revised it three times. Arjun filed at 08:49 and never revised it. Yuki filed at 08:13 and revised it once. Ivan filed at 09:27 and never revised it. Among the analysts who revised their report at least three times, who filed earliest? Respond with only the name.",
+    "expected": "Nikos",
+    "tries": 1
+   },
+   {
+    "seed_index": 15,
+    "seed": "2b2437ed40da7e350d3ff06320e3b1c45e34a5bada3a003264c9186f968fb15f",
+    "prompt": "Reports came in from seven analysts this morning. Katya filed at 08:39 and revised it four times. Mehmet filed at 08:46 and revised it once. Teo filed at 09:27 and revised it four times. Leila filed at 08:23 and revised it four times. Chiara filed at 09:32 and revised it four times. Sanjay filed at 09:30 and revised it once. Ruth filed at 09:09 and revised it once. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+    "expected": "Sanjay",
+    "tries": 1
+   },
+   {
+    "seed_index": 16,
+    "seed": "56e0748e721cd76407e21a797b2fc611af9ab71e0d32c48e512178ada462ac2b",
+    "prompt": "Reports came in from seven analysts this morning. Paulo filed at 10:00 and never revised it. Lucia filed at 09:59 and revised it three times. Lars filed at 09:50 and revised it three times. Nikos filed at 10:36 and revised it twice. Katya filed at 09:26 and never revised it. Olga filed at 08:26 and revised it once. Yara filed at 09:04 and revised it once. Among the analysts who revised their report at least twice, who filed earliest? Respond with only the name.",
+    "expected": "Lars",
+    "tries": 1
+   },
+   {
+    "seed_index": 17,
+    "seed": "da6c632c8c1e8821327939f4bdc19f6bb34c8f39f29318a9671ba48c235008d5",
+    "prompt": "Reports came in from seven analysts this morning. Wanjiru filed at 10:55 and revised it twice. Talia filed at 10:24 and never revised it. Emeka filed at 08:17 and revised it four times. Leila filed at 10:44 and revised it three times. Lucia filed at 10:35 and revised it twice. Zeynep filed at 09:14 and revised it twice. Yuki filed at 08:05 and revised it four times. Among the analysts who revised their report at least three times, who filed latest? Respond with only the name.",
+    "expected": "Leila",
+    "tries": 1
+   },
+   {
+    "seed_index": 18,
+    "seed": "36145fa8d7644dc0174a2d4241019dbc4f102a93df38e67b18c338d8003fa390",
+    "prompt": "Reports came in from seven analysts this morning. Dario filed at 10:06 and never revised it. Beatriz filed at 08:20 and revised it once. Bruno filed at 08:49 and revised it twice. Ivan filed at 08:10 and revised it three times. Olga filed at 10:40 and revised it once. Sanjay filed at 08:55 and revised it twice. Nadia filed at 10:32 and revised it four times. Among the analysts who revised their report exactly once, who filed earliest? Respond with only the name.",
+    "expected": "Beatriz",
+    "tries": 1
+   },
+   {
+    "seed_index": 19,
+    "seed": "81cd4c330a3f361284ff8e97a2da910b37cde2e8c3fd77b25d3d58050d2288df",
+    "prompt": "Reports came in from eight analysts this morning. Omar filed at 09:25 and revised it twice. Nadia filed at 10:11 and never revised it. Leila filed at 08:20 and revised it three times. Hana filed at 08:43 and never revised it. Olga filed at 08:52 and revised it once. Mara filed at 08:03 and revised it once. Teo filed at 08:29 and never revised it. Talia filed at 08:28 and revised it four times. Among the analysts who revised their report at least twice, who filed earliest? Respond with only the name.",
+    "expected": "Leila",
+    "tries": 1
+   },
+   {
+    "seed_index": 20,
+    "seed": "fc6db3f537999841206a80707d54efce157430b92db5407ecc694121dc321fe9",
+    "prompt": "Reports came in from seven analysts this morning. Teo filed at 08:33 and revised it twice. Bruno filed at 10:44 and revised it twice. Chiara filed at 09:50 and revised it four times. Anika filed at 10:22 and revised it twice. Goran filed at 09:42 and revised it four times. Mehmet filed at 09:30 and revised it four times. Mara filed at 08:52 and revised it three times. Among the analysts who revised their report at least three times, who filed latest? Respond with only the name.",
+    "expected": "Chiara",
+    "tries": 1
+   },
+   {
+    "seed_index": 21,
+    "seed": "2110ac050b2da0f31a95814870b73fc27daf097e682f5e4d5a5bf05380076b48",
+    "prompt": "Reports came in from seven analysts this morning. Vera filed at 09:18 and revised it once. Dario filed at 10:12 and revised it once. Ruth filed at 09:05 and revised it four times. Ingrid filed at 09:01 and revised it twice. Arjun filed at 08:35 and revised it once. Wanjiru filed at 10:20 and revised it three times. Jonas filed at 10:23 and revised it four times. Among the analysts who revised their report at least three times, who filed earliest? Respond with only the name.",
+    "expected": "Ruth",
+    "tries": 1
+   },
+   {
+    "seed_index": 22,
+    "seed": "dde039c87d205ccb3c44ece2538d2149aa0b174c4fcba76a006b09427512b3f5",
+    "prompt": "Reports came in from seven analysts this morning. Dario filed at 08:17 and revised it once. Tomas filed at 08:25 and never revised it. Rafael filed at 10:16 and never revised it. Bruno filed at 08:13 and never revised it. Ingrid filed at 09:48 and revised it twice. Xavier filed at 09:53 and revised it twice. Ivan filed at 10:29 and never revised it. Among the analysts who revised their report at least twice, who filed earliest? Respond with only the name.",
+    "expected": "Ingrid",
+    "tries": 1
+   },
+   {
+    "seed_index": 23,
+    "seed": "56955a422e32bda78fc736db3510c52815bd26ba331d26cbde9949610cc19c93",
+    "prompt": "Reports came in from eight analysts this morning. Umar filed at 08:28 and revised it once. Ingrid filed at 10:23 and revised it four times. Chiara filed at 09:10 and revised it three times. Dario filed at 08:13 and revised it once. Mehmet filed at 09:07 and revised it four times. Anika filed at 09:48 and revised it four times. Yara filed at 08:26 and revised it once. Wanjiru filed at 09:13 and never revised it. Among the analysts who revised their report at least twice, who filed earliest? Respond with only the name.",
+    "expected": "Mehmet",
+    "tries": 1
+   },
+   {
+    "seed_index": 24,
+    "seed": "d98561ae39a6c723f8258c6432040c2a3720daa1596b359e6ceb21310ac1e1e8",
+    "prompt": "Reports came in from seven analysts this morning. Jonas filed at 08:54 and revised it once. Chiara filed at 10:25 and revised it three times. Leila filed at 09:16 and revised it three times. Lucia filed at 08:53 and revised it twice. Ines filed at 09:03 and revised it four times. Goran filed at 09:27 and revised it once. Vera filed at 10:45 and revised it three times. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+    "expected": "Goran",
+    "tries": 1
+   }
+  ],
+  "ordering": [
+   {
+    "seed_index": 0,
+    "seed": "770d75072f3483fdb4b2129f7b7d942a2b9f11521de5824fe00f76242b52d1a3",
+    "prompt": "In a race with eight runners there were no ties. Jonas won the race. Teo finished immediately before Beatriz. Umar finished immediately after Beatriz. Paulo finished immediately after Umar. Ingrid finished immediately after Goran. Ingrid finished immediately before Mehmet. Jonas finished immediately before Goran. Mehmet finished immediately before Teo. Who finished fourth? Respond with only the name.",
+    "expected": "Mehmet",
+    "tries": 2
+   },
+   {
+    "seed_index": 1,
+    "seed": "bf350207fe59adc39c867d1ee2589e6f69f950caa5a2fbb46b5ba64870785ab8",
+    "prompt": "In a race with eight runners there were no ties. Emeka won the race. Chiara finished immediately before Beatriz. Paulo finished immediately before Ingrid. Emeka finished immediately before Paulo. Omar finished immediately before Ivan. Ivan finished immediately before Umar. Omar finished immediately after Ingrid. Umar finished immediately before Chiara. Who finished third? Respond with only the name.",
+    "expected": "Ingrid",
+    "tries": 1
+   },
+   {
+    "seed_index": 2,
+    "seed": "fa775c8339c4d0cc170d8fee0c22406f0f65e1bceec4fbf0a2d0211e5a76d767",
+    "prompt": "In a race with eight runners there were no ties. Rafael won the race. Nadia finished immediately after Rafael. Teo finished immediately after Ingrid. Mara finished immediately before Talia. Lars finished immediately after Farah. Nadia finished immediately before Farah. Mara finished immediately after Lars. Talia finished immediately before Ingrid. Who finished fourth? Respond with only the name.",
+    "expected": "Lars",
+    "tries": 1
+   },
+   {
+    "seed_index": 3,
+    "seed": "28246ae60e5dea02a04c4de56066bd4926cc0c32c1a46a3a6af07898ecd49f60",
+    "prompt": "In a race with eight runners there were no ties. Kofi won the race. Zeynep finished immediately after Kofi. Ingrid finished immediately after Arjun. Xavier finished immediately after Zeynep. Goran finished immediately after Xavier. Ingrid finished immediately before Tomas. Goran finished immediately before Arjun. Tomas finished immediately before Chiara. Who finished fourth? Respond with only the name.",
+    "expected": "Goran",
+    "tries": 5
+   },
+   {
+    "seed_index": 4,
+    "seed": "a53fe2229512e41eeb4556e75151eff06efcd61b281100809f328e22f7d3b6ff",
+    "prompt": "In a race with eight runners there were no ties. Anika won the race. Ines finished immediately before Priya. Hana finished immediately before Ines. Xavier finished immediately after Emeka. Anika finished immediately before Wanjiru. Emeka finished immediately after Farah. Xavier finished immediately before Hana. Farah finished immediately after Wanjiru. Who finished fourth? Respond with only the name.",
+    "expected": "Emeka",
+    "tries": 1
+   },
+   {
+    "seed_index": 5,
+    "seed": "f465ff3176673a2904d8b5b92ce98ff3704b5e6db135364c6e08b13dd81c9134",
+    "prompt": "In a race with eight runners there were no ties. Nadia won the race. Lars finished immediately after Leila. Leila finished immediately after Farah. Arjun finished immediately before Mara. Vera finished immediately before Umar. Nadia finished immediately before Arjun. Farah finished immediately after Umar. Vera finished immediately after Mara. Who finished fourth? Respond with only the name.",
+    "expected": "Vera",
+    "tries": 7
+   },
+   {
+    "seed_index": 6,
+    "seed": "f8891cd64ccb9d3ba6373856332e5edb9f0ef8cde00ca1f7f534522b03536ca6",
+    "prompt": "In a race with eight runners there were no ties. Nadia won the race. Bruno finished immediately before Chiara. Nadia finished immediately before Emeka. Umar finished immediately after Arjun. Chiara finished immediately before Arjun. Lars finished immediately after Emeka. Bruno finished immediately after Lars. Umar finished immediately before Lucia. Who finished third? Respond with only the name.",
+    "expected": "Lars",
+    "tries": 2
+   },
+   {
+    "seed_index": 7,
+    "seed": "bf3324857ca08f8e23678d3e518349e74ae43aa62cecd09c62f96448f4d69525",
+    "prompt": "In a race with eight runners there were no ties. Ivan won the race. Vera finished immediately after Paulo. Mara finished immediately after Yara. Leila finished immediately after Vera. Yara finished immediately after Anika. Paulo finished immediately after Mara. Katya finished immediately before Anika. Katya finished immediately after Ivan. Who finished third? Respond with only the name.",
+    "expected": "Anika",
+    "tries": 1
+   },
+   {
+    "seed_index": 8,
+    "seed": "15c82e87a12f5b1c2493adbcc1fd0b010c5846d227a50aaf1032b89d84b02350",
+    "prompt": "In a race with eight runners there were no ties. Ingrid won the race. Umar finished immediately after Farah. Chiara finished immediately before Farah. Yuki finished immediately before Kofi. Kofi finished immediately before Nikos. Yuki finished immediately after Leila. Nikos finished immediately before Chiara. Leila finished immediately after Ingrid. Who finished fourth? Respond with only the name.",
+    "expected": "Kofi",
+    "tries": 4
+   },
+   {
+    "seed_index": 9,
+    "seed": "3852b5d0a469fe537a0c3dc954d266460733ae065a2844cdcc0275f88f7f2a24",
+    "prompt": "In a race with eight runners there were no ties. Teo won the race. Ingrid finished immediately after Ruth. Nadia finished immediately after Umar. Ines finished immediately before Ruth. Farah finished immediately before Ines. Sanjay finished immediately after Nadia. Ingrid finished immediately before Umar. Teo finished immediately before Farah. Who finished third? Respond with only the name.",
+    "expected": "Ines",
+    "tries": 1
+   },
+   {
+    "seed_index": 10,
+    "seed": "ca84f4e2fada5a7bd7a1a8cc5cee3b8b23a97b42cfcb87065031caf899134f00",
+    "prompt": "In a race with eight runners there were no ties. Hana won the race. Wanjiru finished immediately after Ruth. Yuki finished immediately after Farah. Yara finished immediately after Yuki. Nikos finished immediately after Hana. Yara finished immediately before Ruth. Nikos finished immediately before Umar. Farah finished immediately after Umar. Who finished fourth? Respond with only the name.",
+    "expected": "Farah",
+    "tries": 1
+   },
+   {
+    "seed_index": 11,
+    "seed": "18dbbb1e64aae3559f7b2606e821dc68e35dfe2bb462738c8362fbe60cb4a3f9",
+    "prompt": "In a race with eight runners there were no ties. Nikos won the race. Nikos finished immediately before Goran. Mara finished immediately before Bruno. Ruth finished immediately before Xavier. Goran finished immediately before Ruth. Xavier finished immediately before Mehmet. Umar finished immediately after Bruno. Mara finished immediately after Mehmet. Who finished fourth? Respond with only the name.",
+    "expected": "Xavier",
+    "tries": 8
+   },
+   {
+    "seed_index": 12,
+    "seed": "3fd1a852026c7add3003bacb0305f795ed48fa1972091c57b44942b87de9e8f9",
+    "prompt": "In a race with eight runners there were no ties. Olga won the race. Chiara finished immediately after Katya. Nadia finished immediately after Olga. Tomas finished immediately before Anika. Ruth finished immediately before Goran. Chiara finished immediately before Ruth. Katya finished immediately after Anika. Nadia finished immediately before Tomas. Who finished fourth? Respond with only the name.",
+    "expected": "Anika",
+    "tries": 1
+   },
+   {
+    "seed_index": 13,
+    "seed": "38759d556e47626d8944ca784b02822db3eef2f37edcd75eeff7b24e711875ac",
+    "prompt": "In a race with eight runners there were no ties. Omar won the race. Omar finished immediately before Emeka. Kofi finished immediately after Emeka. Farah finished immediately before Mehmet. Wanjiru finished immediately before Arjun. Kofi finished immediately before Wanjiru. Farah finished immediately after Arjun. Goran finished immediately after Mehmet. Who finished third? Respond with only the name.",
+    "expected": "Kofi",
+    "tries": 2
+   },
+   {
+    "seed_index": 14,
+    "seed": "1f5bf7fca6040f298daa5d6e1866b207358b664a8734126bf3b913f7020dc5b3",
+    "prompt": "In a race with eight runners there were no ties. Vera won the race. Nadia finished immediately before Ingrid. Wanjiru finished immediately after Vera. Leila finished immediately before Emeka. Farah finished immediately before Leila. Emeka finished immediately before Ines. Ingrid finished immediately before Farah. Wanjiru finished immediately before Nadia. Who finished fourth? Respond with only the name.",
+    "expected": "Ingrid",
+    "tries": 4
+   },
+   {
+    "seed_index": 15,
+    "seed": "2b2437ed40da7e350d3ff06320e3b1c45e34a5bada3a003264c9186f968fb15f",
+    "prompt": "In a race with eight runners there were no ties. Nikos won the race. Lars finished immediately after Nikos. Paulo finished immediately after Umar. Beatriz finished immediately before Umar. Chiara finished immediately before Dario. Paulo finished immediately before Chiara. Lars finished immediately before Beatriz. Dario finished immediately before Yuki. Who finished fourth? Respond with only the name.",
+    "expected": "Umar",
+    "tries": 2
+   },
+   {
+    "seed_index": 16,
+    "seed": "56e0748e721cd76407e21a797b2fc611af9ab71e0d32c48e512178ada462ac2b",
+    "prompt": "In a race with eight runners there were no ties. Bruno won the race. Yuki finished immediately after Lucia. Ivan finished immediately before Wanjiru. Vera finished immediately after Teo. Lucia finished immediately after Wanjiru. Ivan finished immediately after Ruth. Teo finished immediately after Yuki. Bruno finished immediately before Ruth. Who finished third? Respond with only the name.",
+    "expected": "Ivan",
+    "tries": 1
+   },
+   {
+    "seed_index": 17,
+    "seed": "da6c632c8c1e8821327939f4bdc19f6bb34c8f39f29318a9671ba48c235008d5",
+    "prompt": "In a race with eight runners there were no ties. Talia won the race. Ingrid finished immediately after Beatriz. Talia finished immediately before Bruno. Zeynep finished immediately before Dario. Rafael finished immediately after Yara. Beatriz finished immediately after Dario. Rafael finished immediately before Zeynep. Yara finished immediately after Bruno. Who finished fourth? Respond with only the name.",
+    "expected": "Rafael",
+    "tries": 6
+   },
+   {
+    "seed_index": 18,
+    "seed": "36145fa8d7644dc0174a2d4241019dbc4f102a93df38e67b18c338d8003fa390",
+    "prompt": "In a race with eight runners there were no ties. Vera won the race. Paulo finished immediately after Rafael. Nikos finished immediately after Tomas. Rafael finished immediately after Chiara. Paulo finished immediately before Emeka. Emeka finished immediately before Ruth. Chiara finished immediately after Nikos. Tomas finished immediately after Vera. Who finished fourth? Respond with only the name.",
+    "expected": "Chiara",
+    "tries": 2
+   },
+   {
+    "seed_index": 19,
+    "seed": "81cd4c330a3f361284ff8e97a2da910b37cde2e8c3fd77b25d3d58050d2288df",
+    "prompt": "In a race with eight runners there were no ties. Ivan won the race. Yuki finished immediately before Ingrid. Farah finished immediately after Hana. Arjun finished immediately before Talia. Wanjiru finished immediately before Hana. Farah finished immediately before Arjun. Talia finished immediately before Yuki. Ivan finished immediately before Wanjiru. Who finished fourth? Respond with only the name.",
+    "expected": "Farah",
+    "tries": 1
+   },
+   {
+    "seed_index": 20,
+    "seed": "fc6db3f537999841206a80707d54efce157430b92db5407ecc694121dc321fe9",
+    "prompt": "In a race with eight runners there were no ties. Omar won the race. Paulo finished immediately after Nadia. Nadia finished immediately after Nikos. Ivan finished immediately after Lars. Rafael finished immediately after Omar. Rafael finished immediately before Nikos. Ivan finished immediately before Wanjiru. Lars finished immediately after Paulo. Who finished fourth? Respond with only the name.",
+    "expected": "Nadia",
+    "tries": 1
+   },
+   {
+    "seed_index": 21,
+    "seed": "2110ac050b2da0f31a95814870b73fc27daf097e682f5e4d5a5bf05380076b48",
+    "prompt": "In a race with eight runners there were no ties. Ingrid won the race. Ingrid finished immediately before Lars. Katya finished immediately before Tomas. Chiara finished immediately after Leila. Farah finished immediately before Katya. Farah finished immediately after Chiara. Lars finished immediately before Leila. Ines finished immediately after Tomas. Who finished fourth? Respond with only the name.",
+    "expected": "Chiara",
+    "tries": 2
+   },
+   {
+    "seed_index": 22,
+    "seed": "dde039c87d205ccb3c44ece2538d2149aa0b174c4fcba76a006b09427512b3f5",
+    "prompt": "In a race with eight runners there were no ties. Nadia won the race. Priya finished immediately after Anika. Ines finished immediately before Olga. Arjun finished immediately after Jonas. Nikos finished immediately before Ines. Priya finished immediately before Nikos. Olga finished immediately before Jonas. Anika finished immediately after Nadia. Who finished fourth? Respond with only the name.",
+    "expected": "Nikos",
+    "tries": 2
+   },
+   {
+    "seed_index": 23,
+    "seed": "56955a422e32bda78fc736db3510c52815bd26ba331d26cbde9949610cc19c93",
+    "prompt": "In a race with eight runners there were no ties. Jonas won the race. Lucia finished immediately before Zeynep. Jonas finished immediately before Ruth. Ruth finished immediately before Farah. Mehmet finished immediately before Rafael. Farah finished immediately before Mehmet. Lucia finished immediately after Rafael. Zeynep finished immediately before Nadia. Who finished third? Respond with only the name.",
+    "expected": "Farah",
+    "tries": 4
+   },
+   {
+    "seed_index": 24,
+    "seed": "d98561ae39a6c723f8258c6432040c2a3720daa1596b359e6ceb21310ac1e1e8",
+    "prompt": "In a race with eight runners there were no ties. Xavier won the race. Ines finished immediately before Ingrid. Olga finished immediately after Sanjay. Sanjay finished immediately after Ingrid. Ivan finished immediately before Yuki. Ivan finished immediately after Olga. Xavier finished immediately before Ines. Chiara finished immediately after Yuki. Who finished third? Respond with only the name.",
+    "expected": "Ingrid",
+    "tries": 3
+   }
+  ],
+  "delta": [
+   {
+    "seed_index": 0,
+    "seed": "770d75072f3483fdb4b2129f7b7d942a2b9f11521de5824fe00f76242b52d1a3",
+    "prompt": "At the start of the month the storeroom held eleven tables, 35 stools, fifty-eight chairs, twenty-eight lamps and 25 shelves. A delivery of 9 tables planned for the 25th was cancelled and never arrived. On the 8th a delivery brought 12 shelves, four chairs and 8 tables. On the 11th a clear-out removed fourteen shelves and eleven stools. On the 12th another delivery brought three lamps and eleven tables. Nothing else came in or went out. Counting tables and shelves together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "17",
+    "tries": 1
+   },
+   {
+    "seed_index": 1,
+    "seed": "bf350207fe59adc39c867d1ee2589e6f69f950caa5a2fbb46b5ba64870785ab8",
+    "prompt": "At the start of the month the storeroom held 26 chairs, twenty-nine desks, fifty-seven tables, 57 lamps and 28 cabinets. A delivery of eight desks planned for the 26th was cancelled and never arrived. On the 4th a delivery brought five chairs, 19 tables and fifteen cabinets. On the 8th a clear-out removed 13 desks and eleven tables. On the 13th another delivery brought 13 chairs and 15 desks. Nothing else came in or went out. Counting chairs and desks together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "20",
+    "tries": 3
+   },
+   {
+    "seed_index": 2,
+    "seed": "fa775c8339c4d0cc170d8fee0c22406f0f65e1bceec4fbf0a2d0211e5a76d767",
+    "prompt": "At the start of the month the storeroom held 50 lamps, 46 chairs, 44 tables, twenty-seven stools and thirty-three desks. A delivery of 15 lamps planned for the 14th was cancelled and never arrived. On the 2nd a delivery brought 12 desks, thirteen chairs and nine lamps. On the 3rd a clear-out removed four stools and six desks. On the 11th another delivery brought 8 desks and 18 stools. Nothing else came in or went out. Counting lamps and stools together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "23",
+    "tries": 1
+   },
+   {
+    "seed_index": 3,
+    "seed": "28246ae60e5dea02a04c4de56066bd4926cc0c32c1a46a3a6af07898ecd49f60",
+    "prompt": "At the start of the month the storeroom held 52 cabinets, fifty-two desks, 29 lamps, 15 chairs and sixteen shelves. On the 10th a delivery brought 15 lamps, eighteen desks and 15 chairs. A delivery of 17 chairs planned for the 24th was cancelled and never arrived. On the 13th a clear-out removed 9 desks and 6 chairs. On the 18th another delivery brought eight cabinets and nineteen chairs. Nothing else came in or went out. Counting lamps and chairs together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "43",
+    "tries": 1
+   },
+   {
+    "seed_index": 4,
+    "seed": "a53fe2229512e41eeb4556e75151eff06efcd61b281100809f328e22f7d3b6ff",
+    "prompt": "At the start of the month the storeroom held 12 cabinets, 52 lamps, thirty-three shelves, 55 chairs and 59 tables. A delivery of 11 tables planned for the 27th was cancelled and never arrived. On the 7th a delivery brought 18 cabinets, 11 tables and thirteen chairs. On the 8th a clear-out removed nine tables and 11 shelves. On the 25th another delivery brought fourteen lamps and 7 tables. Nothing else came in or went out. Counting chairs and tables together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "22",
+    "tries": 1
+   },
+   {
+    "seed_index": 5,
+    "seed": "f465ff3176673a2904d8b5b92ce98ff3704b5e6db135364c6e08b13dd81c9134",
+    "prompt": "At the start of the month the storeroom held 50 shelves, twenty-one cabinets, 16 chairs, 19 stools and 55 desks. On the 9th a delivery brought 17 chairs, 11 desks and fifteen cabinets. On the 12th a clear-out removed twelve cabinets and nine shelves. On the 16th another delivery brought 18 stools and 3 shelves. A delivery of six desks planned for the 23rd was cancelled and never arrived. Nothing else came in or went out. Counting desks and shelves together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "5",
+    "tries": 2
+   },
+   {
+    "seed_index": 6,
+    "seed": "f8891cd64ccb9d3ba6373856332e5edb9f0ef8cde00ca1f7f534522b03536ca6",
+    "prompt": "At the start of the month the storeroom held twelve desks, fifty-two cabinets, fifty-nine shelves, 49 tables and 12 stools. A delivery of 16 shelves planned for the 24th was cancelled and never arrived. On the 3rd a delivery brought thirteen desks, 2 shelves and 10 stools. On the 5th a clear-out removed 9 shelves and 15 stools. On the 8th another delivery brought 3 cabinets and eighteen stools. Nothing else came in or went out. Counting shelves and stools together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "6",
+    "tries": 2
+   },
+   {
+    "seed_index": 7,
+    "seed": "bf3324857ca08f8e23678d3e518349e74ae43aa62cecd09c62f96448f4d69525",
+    "prompt": "At the start of the month the storeroom held forty tables, 24 shelves, thirty-six desks, 48 chairs and forty-seven lamps. On the 3rd a delivery brought four tables, eighteen desks and two chairs. On the 13th a clear-out removed 5 tables and 14 chairs. A delivery of seven desks planned for the 26th was cancelled and never arrived. On the 18th another delivery brought six shelves and 13 desks. Nothing else came in or went out. Counting desks and tables together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "30",
+    "tries": 1
+   },
+   {
+    "seed_index": 8,
+    "seed": "15c82e87a12f5b1c2493adbcc1fd0b010c5846d227a50aaf1032b89d84b02350",
+    "prompt": "At the start of the month the storeroom held thirty-six stools, thirty desks, 52 tables, 14 shelves and 8 chairs. On the 2nd a delivery brought seventeen stools, 4 tables and five chairs. On the 4th a clear-out removed twelve stools and 6 tables. On the 21st another delivery brought seven tables and 6 desks. A delivery of four tables planned for the 22nd was cancelled and never arrived. Nothing else came in or went out. Counting tables and stools together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "10",
+    "tries": 1
+   },
+   {
+    "seed_index": 9,
+    "seed": "3852b5d0a469fe537a0c3dc954d266460733ae065a2844cdcc0275f88f7f2a24",
+    "prompt": "At the start of the month the storeroom held 35 tables, 18 shelves, 22 chairs, forty-nine stools and twelve desks. On the 2nd a delivery brought twenty shelves, three desks and 3 tables. A delivery of 6 shelves planned for the 20th was cancelled and never arrived. On the 7th a clear-out removed 7 chairs and 14 desks. On the 18th another delivery brought eleven shelves and 12 tables. Nothing else came in or went out. Counting shelves and chairs together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "24",
+    "tries": 1
+   },
+   {
+    "seed_index": 10,
+    "seed": "ca84f4e2fada5a7bd7a1a8cc5cee3b8b23a97b42cfcb87065031caf899134f00",
+    "prompt": "At the start of the month the storeroom held twenty-six tables, fifty-four lamps, thirty-eight stools, twenty shelves and forty-one chairs. On the 3rd a delivery brought seventeen lamps, 16 chairs and 6 stools. On the 10th a clear-out removed eleven chairs and 14 stools. A delivery of seven stools planned for the 19th was cancelled and never arrived. On the 17th another delivery brought eighteen stools and eighteen shelves. Nothing else came in or went out. Counting chairs and stools together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "15",
+    "tries": 3
+   },
+   {
+    "seed_index": 11,
+    "seed": "18dbbb1e64aae3559f7b2606e821dc68e35dfe2bb462738c8362fbe60cb4a3f9",
+    "prompt": "At the start of the month the storeroom held sixty cabinets, fifteen desks, fifty-four lamps, forty-two tables and 51 chairs. A delivery of 8 chairs planned for the 23rd was cancelled and never arrived. On the 3rd a delivery brought three tables, 20 desks and seventeen chairs. On the 6th a clear-out removed six tables and five cabinets. On the 19th another delivery brought 8 tables and twelve cabinets. Nothing else came in or went out. Counting chairs and cabinets together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "24",
+    "tries": 1
+   },
+   {
+    "seed_index": 12,
+    "seed": "3fd1a852026c7add3003bacb0305f795ed48fa1972091c57b44942b87de9e8f9",
+    "prompt": "At the start of the month the storeroom held 28 lamps, 22 stools, eighteen desks, 17 cabinets and 8 shelves. On the 3rd a delivery brought 17 stools, six cabinets and eleven shelves. On the 10th a clear-out removed six desks and nine stools. A delivery of 11 shelves planned for the 17th was cancelled and never arrived. On the 13th another delivery brought twenty cabinets and seventeen stools. Nothing else came in or went out. Counting shelves and stools together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "36",
+    "tries": 1
+   },
+   {
+    "seed_index": 13,
+    "seed": "38759d556e47626d8944ca784b02822db3eef2f37edcd75eeff7b24e711875ac",
+    "prompt": "At the start of the month the storeroom held sixteen tables, 14 stools, 27 chairs, 34 desks and forty-five shelves. On the 9th a delivery brought 13 shelves, four stools and 4 tables. A delivery of 19 stools planned for the 25th was cancelled and never arrived. On the 13th a clear-out removed 8 stools and thirteen tables. On the 23rd another delivery brought 3 stools and twelve tables. Nothing else came in or went out. Counting tables and stools together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "2",
+    "tries": 1
+   },
+   {
+    "seed_index": 14,
+    "seed": "1f5bf7fca6040f298daa5d6e1866b207358b664a8734126bf3b913f7020dc5b3",
+    "prompt": "At the start of the month the storeroom held 20 stools, nine desks, 27 tables, 55 cabinets and 15 chairs. On the 2nd a delivery brought 14 tables, 5 cabinets and 18 chairs. A delivery of 15 chairs planned for the 20th was cancelled and never arrived. On the 10th a clear-out removed 9 cabinets and 2 stools. On the 11th another delivery brought 14 chairs and 10 desks. Nothing else came in or went out. Counting chairs and stools together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "30",
+    "tries": 3
+   },
+   {
+    "seed_index": 15,
+    "seed": "2b2437ed40da7e350d3ff06320e3b1c45e34a5bada3a003264c9186f968fb15f",
+    "prompt": "At the start of the month the storeroom held 31 desks, 54 shelves, forty-two cabinets, 27 stools and thirty-eight chairs. On the 5th a delivery brought ten cabinets, 16 stools and 17 desks. On the 12th a clear-out removed 13 desks and 6 shelves. On the 25th another delivery brought fifteen cabinets and 20 desks. A delivery of 11 shelves planned for the 27th was cancelled and never arrived. Nothing else came in or went out. Counting cabinets and shelves together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "19",
+    "tries": 1
+   },
+   {
+    "seed_index": 16,
+    "seed": "56e0748e721cd76407e21a797b2fc611af9ab71e0d32c48e512178ada462ac2b",
+    "prompt": "At the start of the month the storeroom held 9 shelves, 53 tables, 59 lamps, 25 chairs and 56 cabinets. On the 5th a delivery brought 8 cabinets, six lamps and 14 tables. On the 18th a clear-out removed 8 shelves and ten lamps. A delivery of thirteen tables planned for the 26th was cancelled and never arrived. On the 20th another delivery brought seven chairs and five lamps. Nothing else came in or went out. Counting tables and lamps together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "15",
+    "tries": 3
+   },
+   {
+    "seed_index": 17,
+    "seed": "da6c632c8c1e8821327939f4bdc19f6bb34c8f39f29318a9671ba48c235008d5",
+    "prompt": "At the start of the month the storeroom held seventeen cabinets, fifty-nine chairs, sixty shelves, fifty lamps and 21 desks. On the 4th a delivery brought three cabinets, 17 desks and two chairs. On the 13th a clear-out removed eight shelves and ten chairs. A delivery of 3 desks planned for the 26th was cancelled and never arrived. On the 21st another delivery brought eighteen lamps and fourteen desks. Nothing else came in or went out. Counting desks and shelves together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "23",
+    "tries": 2
+   },
+   {
+    "seed_index": 18,
+    "seed": "36145fa8d7644dc0174a2d4241019dbc4f102a93df38e67b18c338d8003fa390",
+    "prompt": "At the start of the month the storeroom held 27 shelves, fifty-four lamps, eight chairs, forty-three tables and 60 cabinets. On the 4th a delivery brought five chairs, six lamps and eighteen cabinets. On the 14th a clear-out removed 3 cabinets and 4 lamps. On the 15th another delivery brought 12 chairs and 8 tables. A delivery of eleven lamps planned for the 18th was cancelled and never arrived. Nothing else came in or went out. Counting chairs and lamps together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "19",
+    "tries": 1
+   },
+   {
+    "seed_index": 19,
+    "seed": "81cd4c330a3f361284ff8e97a2da910b37cde2e8c3fd77b25d3d58050d2288df",
+    "prompt": "At the start of the month the storeroom held 31 desks, thirty-nine chairs, sixty stools, 54 shelves and 15 tables. A delivery of 10 chairs planned for the 26th was cancelled and never arrived. On the 2nd a delivery brought 19 chairs, two stools and 9 desks. On the 8th a clear-out removed 9 chairs and 3 stools. On the 15th another delivery brought 19 chairs and two desks. Nothing else came in or went out. Counting stools and chairs together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "28",
+    "tries": 1
+   },
+   {
+    "seed_index": 20,
+    "seed": "fc6db3f537999841206a80707d54efce157430b92db5407ecc694121dc321fe9",
+    "prompt": "At the start of the month the storeroom held forty-one shelves, twenty chairs, 39 desks, 41 stools and fifty-eight tables. On the 5th a delivery brought 5 chairs, twenty stools and 3 desks. A delivery of eighteen chairs planned for the 26th was cancelled and never arrived. On the 7th a clear-out removed ten tables and 2 chairs. On the 16th another delivery brought 13 desks and nineteen tables. Nothing else came in or went out. Counting chairs and tables together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "12",
+    "tries": 2
+   },
+   {
+    "seed_index": 21,
+    "seed": "2110ac050b2da0f31a95814870b73fc27daf097e682f5e4d5a5bf05380076b48",
+    "prompt": "At the start of the month the storeroom held fifty-seven lamps, thirty desks, 18 tables, fourteen chairs and 36 cabinets. On the 2nd a delivery brought 10 lamps, 10 cabinets and sixteen tables. A delivery of 20 cabinets planned for the 21st was cancelled and never arrived. On the 7th a clear-out removed 5 lamps and thirteen chairs. On the 18th another delivery brought fourteen tables and 4 chairs. Nothing else came in or went out. Counting cabinets and chairs together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "1",
+    "tries": 1
+   },
+   {
+    "seed_index": 22,
+    "seed": "dde039c87d205ccb3c44ece2538d2149aa0b174c4fcba76a006b09427512b3f5",
+    "prompt": "At the start of the month the storeroom held 8 desks, twenty-four lamps, 34 stools, thirty cabinets and 50 tables. On the 2nd a delivery brought 10 tables, 20 desks and 9 stools. A delivery of three lamps planned for the 21st was cancelled and never arrived. On the 13th a clear-out removed five cabinets and 5 lamps. On the 16th another delivery brought fifteen desks and twenty tables. Nothing else came in or went out. Counting tables and lamps together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "25",
+    "tries": 4
+   },
+   {
+    "seed_index": 23,
+    "seed": "56955a422e32bda78fc736db3510c52815bd26ba331d26cbde9949610cc19c93",
+    "prompt": "At the start of the month the storeroom held 10 lamps, fifty-three chairs, nine tables, sixteen shelves and fifty-three desks. On the 5th a delivery brought 20 chairs, two desks and fifteen lamps. On the 7th a clear-out removed fifteen lamps and 7 tables. A delivery of ten desks planned for the 27th was cancelled and never arrived. On the 13th another delivery brought nine desks and ten tables. Nothing else came in or went out. Counting desks and tables together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "14",
+    "tries": 2
+   },
+   {
+    "seed_index": 24,
+    "seed": "d98561ae39a6c723f8258c6432040c2a3720daa1596b359e6ceb21310ac1e1e8",
+    "prompt": "At the start of the month the storeroom held 29 tables, forty-eight stools, fifty-one lamps, 58 desks and 34 cabinets. On the 7th a delivery brought thirteen desks, 17 cabinets and two tables. A delivery of 16 cabinets planned for the 23rd was cancelled and never arrived. On the 16th a clear-out removed 7 tables and 12 cabinets. On the 18th another delivery brought 8 tables and six cabinets. Nothing else came in or went out. Counting desks and cabinets together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+    "expected": "24",
+    "tries": 1
+   }
+  ]
+ },
+ "verifications": [
+  {
+   "seed": "770d75072f3483fdb4b2129f7b7d942a2b9f11521de5824fe00f76242b52d1a3",
+   "probes": [
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Goran filed at 08:01 and never revised it. Zeynep filed at 08:00 and revised it three times. Lucia filed at 08:06 and revised it four times. Tomas filed at 10:12 and revised it three times. Hana filed at 08:14 and never revised it. Wanjiru filed at 09:16 and never revised it. Kofi filed at 09:21 and revised it twice. Mara filed at 08:10 and never revised it. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+     "expected": "Wanjiru",
+     "id": "p1"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held forty-four lamps, fifty-eight tables, 48 chairs, fifty-five cabinets and 30 shelves. A delivery of twelve chairs planned for the 26th was cancelled and never arrived. On the 12th a delivery brought 4 lamps, sixteen chairs and fourteen shelves. On the 13th a clear-out removed 12 lamps and 6 tables. On the 19th another delivery brought twelve chairs and eight shelves. Nothing else came in or went out. Counting chairs and tables together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "22",
+     "id": "p2"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Talia had seven shells. This week Emeka starts with 15 shells. This week Talia starts with forty-five shells. This week Goran starts with twenty-one shells. Talia gives Emeka 20 shells. Goran offers to give Talia 2 shells, but Talia turns the offer down. Emeka hands eighteen shells to Talia. Emeka asks Goran to send over 15 shells, and Goran refuses. Talia hands seven shells to Goran. No other shells change hands. How many shells does Goran have at the end of the week? Respond with only the integer.",
+     "expected": "28",
+     "id": "p3"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 17 tables, fifty-eight stools, forty-three shelves, fifty-two cabinets and 52 desks. On the 8th a delivery brought three tables, eleven desks and fifteen stools. A delivery of 19 shelves planned for the 25th was cancelled and never arrived. On the 9th a clear-out removed three shelves and nine stools. On the 24th another delivery brought 11 tables and four shelves. Nothing else came in or went out. Counting desks and shelves together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "12",
+     "id": "p4"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Mara had 46 marbles. This week Anika starts with 35 marbles. This week Mara starts with 37 marbles. This week Umar starts with fifty-eight marbles. Umar gives Mara 14 marbles. Umar gives Mara 23 marbles. Umar offers to give Mara 20 marbles, but Mara turns the offer down. Anika offers to give Umar seventeen marbles, but Umar turns the offer down. Umar receives nine marbles from Mara. No other marbles change hands. How many marbles does Mara have at the end of the week? Respond with only the integer.",
+     "expected": "65",
+     "id": "p5"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Paulo won the race. Nikos finished immediately before Yuki. Lucia finished immediately after Ines. Ines finished immediately after Yuki. Mehmet finished immediately before Dario. Mehmet finished immediately after Paulo. Nikos finished immediately after Rafael. Dario finished immediately before Rafael. Who finished third? Respond with only the name.",
+     "expected": "Dario",
+     "id": "p6"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from seven analysts this morning. Zeynep filed at 08:28 and revised it twice. Hana filed at 10:27 and revised it twice. Leila filed at 09:10 and revised it once. Vera filed at 09:04 and revised it once. Lars filed at 09:17 and never revised it. Wanjiru filed at 09:57 and revised it four times. Mara filed at 10:24 and revised it twice. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+     "expected": "Lars",
+     "id": "p7"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the north hall, the supplier call starts at 11:30. The budget meeting starts 50 minutes before the supplier call starts. The interview starts an hour before the budget meeting starts. In the west wing, the safety drill starts at 12:45. The briefing starts three quarters of an hour before the safety drill starts. The workshop starts 50 minutes before the briefing starts. At what time does the workshop in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "11:10",
+     "id": "p8"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the north hall, the workshop starts at 15:30. The handover starts a quarter of an hour before the workshop starts. The inspection starts twenty minutes before the handover starts. In the west wing, the rehearsal starts at 14:30. The interview starts half an hour before the rehearsal starts. The safety drill starts forty minutes before the interview starts. Afterwards, the handover is rescheduled to start 25 minutes later than planned. At what time does the handover in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "15:40",
+     "id": "p9"
+    }
+   ]
+  },
+  {
+   "seed": "bf350207fe59adc39c867d1ee2589e6f69f950caa5a2fbb46b5ba64870785ab8",
+   "probes": [
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 40 shelves, twenty-six cabinets, twenty-eight chairs, fifty-four tables and fifty-two desks. On the 10th a delivery brought eleven chairs, 8 tables and two cabinets. On the 18th a clear-out removed 13 desks and 15 chairs. A delivery of twelve desks planned for the 22nd was cancelled and never arrived. On the 19th another delivery brought eighteen cabinets and nineteen desks. Nothing else came in or went out. Counting tables and desks together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "14",
+     "id": "p1"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from seven analysts this morning. Leila filed at 10:26 and revised it twice. Arjun filed at 10:14 and revised it once. Yara filed at 08:55 and revised it four times. Anika filed at 10:09 and never revised it. Rafael filed at 08:43 and revised it once. Priya filed at 08:41 and revised it once. Bruno filed at 08:12 and revised it three times. Among the analysts who revised their report at most once, who filed earliest? Respond with only the name.",
+     "expected": "Priya",
+     "id": "p2"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 13 cabinets, 50 lamps, twenty-five shelves, thirty-six chairs and fifty desks. On the 4th a delivery brought two lamps, five desks and 15 chairs. On the 6th a clear-out removed two desks and twelve cabinets. A delivery of 13 chairs planned for the 18th was cancelled and never arrived. On the 12th another delivery brought 4 cabinets and ten shelves. Nothing else came in or went out. Counting chairs and cabinets together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "7",
+     "id": "p3"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Rafael had sixty-nine tickets. This week Rafael starts with twenty-one tickets. This week Jonas starts with 42 tickets. This week Dario starts with forty-two tickets. Rafael gives Jonas 4 tickets. Dario gives Jonas 15 tickets. Rafael receives sixteen tickets from Dario. Dario offers to give Rafael 8 tickets, but Rafael turns the offer down. Dario asks Jonas to send over twenty-two tickets, and Jonas refuses. No other tickets change hands. How many tickets does Rafael have at the end of the week? Respond with only the integer.",
+     "expected": "33",
+     "id": "p4"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Tomas won the race. Xavier finished immediately before Omar. Talia finished immediately after Nikos. Vera finished immediately after Sanjay. Sanjay finished immediately after Tomas. Xavier finished immediately after Talia. Nikos finished immediately after Vera. Jonas finished immediately after Omar. Who finished third? Respond with only the name.",
+     "expected": "Vera",
+     "id": "p5"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Zeynep had seventy-seven coins. This week Yuki starts with forty-two coins. This week Zeynep starts with 60 coins. This week Beatriz starts with 25 coins. Beatriz plans to hand nineteen coins to Yuki, then changes plans and keeps them. Zeynep gives Beatriz half of the coins Zeynep has at that moment. Yuki plans to hand twenty-seven coins to Zeynep, then changes plans and keeps them. Yuki gives Zeynep 5 coins. Beatriz hands five coins to Yuki. No other coins change hands. How many coins does Zeynep have at the end of the week? Respond with only the integer.",
+     "expected": "35",
+     "id": "p6"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the west wing, the budget meeting starts at 12:30. The workshop starts forty minutes before the budget meeting starts. The supplier call starts an hour and a half before the workshop starts. In the east wing, the interview starts at 11:15. The review starts an hour after the interview starts. The stand-up starts 35 minutes before the review starts. Afterwards, the supplier call is rescheduled to start twenty minutes earlier than planned. At what time does the supplier call in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "10:00",
+     "id": "p7"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from seven analysts this morning. Katya filed at 08:01 and revised it twice. Mara filed at 08:29 and revised it four times. Zeynep filed at 08:16 and revised it four times. Farah filed at 10:20 and revised it once. Xavier filed at 08:54 and revised it three times. Lucia filed at 10:08 and revised it three times. Nikos filed at 08:46 and revised it once. Among the analysts who revised their report at least three times, who filed earliest? Respond with only the name.",
+     "expected": "Zeynep",
+     "id": "p8"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Omar won the race. Yuki finished immediately after Ines. Mehmet finished immediately after Jonas. Jonas finished immediately after Rafael. Ines finished immediately after Wanjiru. Mehmet finished immediately before Umar. Wanjiru finished immediately after Omar. Rafael finished immediately after Yuki. Who finished third? Respond with only the name.",
+     "expected": "Ines",
+     "id": "p9"
+    }
+   ]
+  },
+  {
+   "seed": "fa775c8339c4d0cc170d8fee0c22406f0f65e1bceec4fbf0a2d0211e5a76d767",
+   "probes": [
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Hana had 36 shells. This week Emeka starts with 17 shells. This week Hana starts with 26 shells. This week Lars starts with thirty-five shells. Hana hands 5 shells to Lars. Lars receives 7 shells from Emeka. Lars asks Hana to send over nine shells, and Hana refuses. Emeka receives 5 shells from Hana. Emeka plans to hand seven shells to Lars, then changes plans and keeps them. No other shells change hands. How many shells does Lars have at the end of the week? Respond with only the integer.",
+     "expected": "47",
+     "id": "p1"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the north hall, the workshop starts at 11:45. The rehearsal starts ten minutes before the workshop starts. The safety drill starts 25 minutes before the rehearsal starts. In the west wing, the budget meeting starts at 11:15. The briefing starts twenty minutes after the budget meeting starts. The review starts 35 minutes before the briefing starts. At what time does the briefing in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "11:35",
+     "id": "p2"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Talia filed at 09:59 and revised it four times. Hana filed at 10:13 and never revised it. Ivan filed at 10:11 and never revised it. Mehmet filed at 09:57 and revised it three times. Olga filed at 10:09 and revised it four times. Emeka filed at 08:54 and never revised it. Kofi filed at 08:15 and revised it once. Goran filed at 09:35 and revised it three times. Among the analysts who revised their report at least twice, who filed latest? Respond with only the name.",
+     "expected": "Olga",
+     "id": "p3"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Rafael filed at 09:02 and revised it four times. Jonas filed at 09:13 and revised it once. Yara filed at 10:37 and revised it once. Tomas filed at 10:27 and revised it four times. Ruth filed at 08:10 and never revised it. Bruno filed at 09:26 and revised it once. Emeka filed at 08:04 and never revised it. Beatriz filed at 09:41 and revised it three times. Among the analysts who revised their report exactly once, who filed earliest? Respond with only the name.",
+     "expected": "Jonas",
+     "id": "p4"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Priya won the race. Omar finished immediately after Sanjay. Yara finished immediately before Katya. Hana finished immediately after Umar. Yuki finished immediately before Yara. Sanjay finished immediately after Hana. Priya finished immediately before Yuki. Umar finished immediately after Katya. Who finished third? Respond with only the name.",
+     "expected": "Yara",
+     "id": "p5"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held thirty-five tables, forty-eight stools, 19 lamps, 56 shelves and twenty-eight chairs. On the 4th a delivery brought 15 tables, 11 stools and 4 shelves. On the 6th a clear-out removed 8 lamps and thirteen shelves. On the 13th another delivery brought eleven lamps and nine shelves. A delivery of 11 tables planned for the 14th was cancelled and never arrived. Nothing else came in or went out. Counting tables and lamps together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "18",
+     "id": "p6"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 12 lamps, 51 chairs, 60 shelves, forty-five desks and 40 cabinets. On the 4th a delivery brought 16 cabinets, four shelves and 12 chairs. On the 15th a clear-out removed 11 desks and ten chairs. A delivery of 16 shelves planned for the 22nd was cancelled and never arrived. On the 20th another delivery brought eight shelves and thirteen chairs. Nothing else came in or went out. Counting shelves and desks together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "1",
+     "id": "p7"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Emeka won the race. Beatriz finished immediately after Nadia. Mara finished immediately before Bruno. Bruno finished immediately before Nadia. Beatriz finished immediately before Tomas. Mara finished immediately after Kofi. Paulo finished immediately after Tomas. Emeka finished immediately before Kofi. Who finished fourth? Respond with only the name.",
+     "expected": "Bruno",
+     "id": "p8"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the east wing, the stand-up starts at 13:15. The supplier call starts twenty minutes before the stand-up starts. The site visit starts twenty minutes before the supplier call starts. In the west wing, the briefing starts at 12:45. The handover starts an hour before the briefing starts. The review starts 50 minutes after the handover starts. Afterwards, the review is rescheduled to start 25 minutes later than planned. At what time does the review in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "13:00",
+     "id": "p9"
+    }
+   ]
+  },
+  {
+   "seed": "28246ae60e5dea02a04c4de56066bd4926cc0c32c1a46a3a6af07898ecd49f60",
+   "probes": [
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 13 lamps, forty-five desks, forty-one tables, thirty-seven stools and 53 shelves. On the 2nd a delivery brought sixteen shelves, two tables and 12 lamps. On the 6th a clear-out removed 8 tables and nine shelves. A delivery of fourteen lamps planned for the 25th was cancelled and never arrived. On the 15th another delivery brought eighteen tables and four lamps. Nothing else came in or went out. Counting lamps and tables together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "28",
+     "id": "p1"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Farah won the race. Farah finished immediately before Rafael. Zeynep finished immediately after Yuki. Nadia finished immediately after Wanjiru. Yuki finished immediately after Rafael. Kofi finished immediately after Zeynep. Wanjiru finished immediately after Kofi. Lucia finished immediately after Nadia. Who finished third? Respond with only the name.",
+     "expected": "Yuki",
+     "id": "p2"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the west wing, the site visit starts at 09:30. The interview starts half an hour before the site visit starts. The briefing starts forty minutes before the interview starts. In the east wing, the inspection starts at 13:00. The budget meeting starts an hour and a half after the inspection starts. The review starts an hour and a half after the budget meeting starts. Afterwards, the interview is rescheduled to start ten minutes later than planned. At what time does the interview in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "09:10",
+     "id": "p3"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Leila had thirty-two tokens. This week Ivan starts with forty-three tokens. This week Paulo starts with thirty-six tokens. This week Leila starts with 44 tokens. Leila asks Ivan to send over 30 tokens, and Ivan refuses. Paulo receives six tokens from Leila. Ivan plans to hand 5 tokens to Leila, then changes plans and keeps them. Paulo receives 21 tokens from Ivan. Leila hands seven tokens to Ivan. No other tokens change hands. How many tokens does Ivan have at the end of the week? Respond with only the integer.",
+     "expected": "29",
+     "id": "p4"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from seven analysts this morning. Hana filed at 08:15 and revised it four times. Yara filed at 09:12 and never revised it. Nikos filed at 10:37 and revised it three times. Jonas filed at 08:53 and never revised it. Anika filed at 10:06 and revised it four times. Talia filed at 09:42 and revised it three times. Katya filed at 10:45 and revised it twice. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+     "expected": "Yara",
+     "id": "p5"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from seven analysts this morning. Wanjiru filed at 08:33 and revised it once. Vera filed at 09:35 and never revised it. Teo filed at 08:07 and never revised it. Anika filed at 09:00 and revised it four times. Umar filed at 08:54 and revised it three times. Kofi filed at 08:38 and revised it once. Lars filed at 08:24 and never revised it. Among the analysts who revised their report at least twice, who filed latest? Respond with only the name.",
+     "expected": "Anika",
+     "id": "p6"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Sanjay won the race. Zeynep finished immediately after Lucia. Lucia finished immediately after Ivan. Zeynep finished immediately before Beatriz. Tomas finished immediately after Arjun. Beatriz finished immediately before Arjun. Teo finished immediately after Tomas. Sanjay finished immediately before Ivan. Who finished third? Respond with only the name.",
+     "expected": "Lucia",
+     "id": "p7"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the north hall, the demo starts at 15:30. The handover starts 25 minutes before the demo starts. The budget meeting starts forty minutes before the handover starts. In the west wing, the inspection starts at 13:30. The briefing starts an hour after the inspection starts. The review starts twenty minutes before the briefing starts. Afterwards, the briefing is rescheduled to start twenty minutes later than planned. At what time does the briefing in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "14:50",
+     "id": "p8"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Ines had 25 stamps. This week Zeynep starts with 46 stamps. This week Omar starts with twenty-nine stamps. This week Ines starts with fifty-four stamps. Ines hands twenty-one stamps to Zeynep. Omar offers to give Ines twenty stamps, but Ines turns the offer down. Omar receives 4 stamps from Ines. Ines plans to hand 6 stamps to Zeynep, then changes plans and keeps them. Zeynep hands six stamps to Omar. No other stamps change hands. How many stamps does Ines have at the end of the week? Respond with only the integer.",
+     "expected": "29",
+     "id": "p9"
+    }
+   ]
+  },
+  {
+   "seed": "a53fe2229512e41eeb4556e75151eff06efcd61b281100809f328e22f7d3b6ff",
+   "probes": [
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 11 chairs, sixty shelves, fifty-five cabinets, twenty-one stools and forty-seven lamps. On the 13th a delivery brought 15 stools, eight chairs and 3 lamps. On the 15th a clear-out removed 8 chairs and three cabinets. On the 24th another delivery brought 19 cabinets and eighteen lamps. A delivery of twelve cabinets planned for the 26th was cancelled and never arrived. Nothing else came in or went out. Counting stools and cabinets together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "31",
+     "id": "p1"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the west wing, the tasting starts at 10:30. The budget meeting starts half an hour after the tasting starts. The rehearsal starts 25 minutes after the budget meeting starts. In the east wing, the handover starts at 11:15. The safety drill starts 50 minutes after the handover starts. The stand-up starts ten minutes before the safety drill starts. Afterwards, the stand-up is rescheduled to start an hour later than planned. At what time does the stand-up in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "12:55",
+     "id": "p2"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from seven analysts this morning. Sanjay filed at 09:40 and revised it twice. Lucia filed at 08:15 and never revised it. Goran filed at 08:13 and revised it once. Ivan filed at 10:30 and revised it twice. Paulo filed at 09:21 and revised it three times. Emeka filed at 09:54 and revised it four times. Leila filed at 08:20 and revised it three times. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+     "expected": "Lucia",
+     "id": "p3"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Mara won the race. Beatriz finished immediately before Chiara. Rafael finished immediately before Yuki. Beatriz finished immediately after Lucia. Sanjay finished immediately before Paulo. Lucia finished immediately after Paulo. Sanjay finished immediately after Yuki. Mara finished immediately before Rafael. Who finished fourth? Respond with only the name.",
+     "expected": "Sanjay",
+     "id": "p4"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Umar had nine stamps. This week Ines starts with thirty-eight stamps. This week Omar starts with 59 stamps. This week Umar starts with thirty-five stamps. Omar offers to give Ines 16 stamps, but Ines turns the offer down. Ines gives Umar half of the stamps Ines has at that moment. Ines gives Omar 2 stamps. Ines offers to give Omar 9 stamps, but Omar turns the offer down. Umar receives two stamps from Ines. No other stamps change hands. How many stamps does Omar have at the end of the week? Respond with only the integer.",
+     "expected": "61",
+     "id": "p5"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the east wing, the briefing starts at 09:15. The demo starts a quarter of an hour after the briefing starts. The budget meeting starts three quarters of an hour before the demo starts. In the north hall, the stand-up starts at 09:15. The supplier call starts 50 minutes after the stand-up starts. The rehearsal starts 50 minutes after the supplier call starts. At what time does the demo in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "09:30",
+     "id": "p6"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Ingrid won the race. Umar finished immediately after Tomas. Lucia finished immediately after Rafael. Lucia finished immediately before Lars. Ingrid finished immediately before Ivan. Tomas finished immediately after Mehmet. Rafael finished immediately after Ivan. Mehmet finished immediately after Lars. Who finished fourth? Respond with only the name.",
+     "expected": "Lucia",
+     "id": "p7"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 48 lamps, 18 desks, nineteen cabinets, 18 shelves and twelve stools. A delivery of nineteen lamps planned for the 20th was cancelled and never arrived. On the 13th a delivery brought eighteen stools, 15 shelves and nine cabinets. On the 14th a clear-out removed ten lamps and 2 desks. On the 17th another delivery brought 9 shelves and two cabinets. Nothing else came in or went out. Counting cabinets and lamps together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "1",
+     "id": "p8"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Emeka had 26 tokens. This week Olga starts with forty-eight tokens. This week Tomas starts with 31 tokens. This week Emeka starts with 33 tokens. Olga gives Emeka 13 tokens. Emeka plans to hand 21 tokens to Tomas, then changes plans and keeps them. Olga plans to hand 19 tokens to Tomas, then changes plans and keeps them. Olga hands 16 tokens to Tomas. Emeka gives Tomas half of the tokens Emeka has at that moment. No other tokens change hands. How many tokens does Emeka have at the end of the week? Respond with only the integer.",
+     "expected": "23",
+     "id": "p9"
+    }
+   ]
+  },
+  {
+   "seed": "f465ff3176673a2904d8b5b92ce98ff3704b5e6db135364c6e08b13dd81c9134",
+   "probes": [
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Zeynep had 80 coins. This week Yara starts with fifteen coins. This week Talia starts with twenty-one coins. This week Zeynep starts with 54 coins. Talia hands 9 coins to Zeynep. Yara gives Talia eleven coins. Yara gives Talia two coins. Yara offers to give Zeynep 28 coins, but Zeynep turns the offer down. Yara asks Zeynep to send over twenty-eight coins, and Zeynep refuses. No other coins change hands. How many coins does Yara have at the end of the week? Respond with only the integer.",
+     "expected": "2",
+     "id": "p1"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Tomas filed at 08:57 and revised it once. Arjun filed at 10:59 and revised it three times. Anika filed at 08:27 and never revised it. Nikos filed at 08:33 and revised it twice. Hana filed at 09:21 and revised it four times. Yuki filed at 10:37 and revised it once. Beatriz filed at 10:04 and never revised it. Sanjay filed at 09:43 and revised it twice. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+     "expected": "Yuki",
+     "id": "p2"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Vera had seventy-nine stamps. This week Lucia starts with 45 stamps. This week Vera starts with 57 stamps. This week Kofi starts with twenty-one stamps. Lucia hands four stamps to Kofi. Lucia receives 13 stamps from Vera. Vera offers to give Lucia twenty-two stamps, but Lucia turns the offer down. Kofi offers to give Lucia twenty-five stamps, but Lucia turns the offer down. Lucia gives Vera half of the stamps Lucia has at that moment. No other stamps change hands. How many stamps does Lucia have at the end of the week? Respond with only the integer.",
+     "expected": "27",
+     "id": "p3"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held fifty-eight stools, 25 lamps, 60 cabinets, forty-six tables and 31 shelves. On the 7th a delivery brought 4 shelves, 14 stools and eight lamps. A delivery of 15 shelves planned for the 20th was cancelled and never arrived. On the 18th a clear-out removed 10 shelves and 6 cabinets. On the 19th another delivery brought 14 tables and fourteen shelves. Nothing else came in or went out. Counting stools and shelves together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "22",
+     "id": "p4"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Tomas won the race. Wanjiru finished immediately after Leila. Leila finished immediately after Nadia. Yara finished immediately after Tomas. Zeynep finished immediately before Ingrid. Nadia finished immediately after Yara. Omar finished immediately after Wanjiru. Omar finished immediately before Zeynep. Who finished third? Respond with only the name.",
+     "expected": "Nadia",
+     "id": "p5"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the east wing, the briefing starts at 11:30. The inspection starts 35 minutes before the briefing starts. The demo starts forty minutes after the inspection starts. In the south hall, the interview starts at 09:30. The rehearsal starts three quarters of an hour before the interview starts. The supplier call starts a quarter of an hour before the rehearsal starts. Afterwards, the inspection is rescheduled to start a quarter of an hour later than planned. At what time does the inspection in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "11:10",
+     "id": "p6"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the south hall, the tasting starts at 09:00. The stand-up starts twenty minutes before the tasting starts. The site visit starts twenty minutes before the stand-up starts. In the north hall, the workshop starts at 11:45. The demo starts an hour before the workshop starts. The safety drill starts 50 minutes before the demo starts. Afterwards, the demo is rescheduled to start 35 minutes later than planned. At what time does the demo in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "11:20",
+     "id": "p7"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Beatriz won the race. Wanjiru finished immediately before Ingrid. Wanjiru finished immediately after Kofi. Emeka finished immediately after Vera. Kofi finished immediately after Emeka. Ingrid finished immediately before Ines. Priya finished immediately before Vera. Beatriz finished immediately before Priya. Who finished fourth? Respond with only the name.",
+     "expected": "Emeka",
+     "id": "p8"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Teo filed at 08:11 and revised it twice. Farah filed at 10:11 and revised it three times. Arjun filed at 09:37 and never revised it. Chiara filed at 10:29 and revised it once. Jonas filed at 09:26 and revised it three times. Nadia filed at 10:54 and revised it three times. Lars filed at 08:39 and revised it once. Mara filed at 10:32 and revised it three times. Among the analysts who revised their report at least three times, who filed earliest? Respond with only the name.",
+     "expected": "Jonas",
+     "id": "p9"
+    }
+   ]
+  },
+  {
+   "seed": "f8891cd64ccb9d3ba6373856332e5edb9f0ef8cde00ca1f7f534522b03536ca6",
+   "probes": [
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Ines had 51 tokens. This week Ines starts with forty-nine tokens. This week Mehmet starts with twenty tokens. This week Sanjay starts with forty-eight tokens. Ines hands 19 tokens to Mehmet. Ines plans to hand nine tokens to Mehmet, then changes plans and keeps them. Mehmet offers to give Ines twenty-three tokens, but Ines turns the offer down. Sanjay gives Ines half of the tokens Sanjay has at that moment. Mehmet hands 8 tokens to Sanjay. No other tokens change hands. How many tokens does Mehmet have at the end of the week? Respond with only the integer.",
+     "expected": "31",
+     "id": "p1"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the west wing, the rehearsal starts at 14:45. The briefing starts ten minutes before the rehearsal starts. The tasting starts an hour and a half before the briefing starts. In the south hall, the budget meeting starts at 12:30. The safety drill starts half an hour after the budget meeting starts. The handover starts a quarter of an hour before the safety drill starts. Afterwards, the briefing is rescheduled to start 25 minutes later than planned. At what time does the briefing in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "15:00",
+     "id": "p2"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the east wing, the safety drill starts at 09:45. The site visit starts 50 minutes after the safety drill starts. The demo starts three quarters of an hour before the site visit starts. In the west wing, the handover starts at 09:30. The budget meeting starts twenty minutes after the handover starts. The review starts 35 minutes before the budget meeting starts. Afterwards, the site visit is rescheduled to start ten minutes earlier than planned. At what time does the site visit in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "10:25",
+     "id": "p3"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Emeka filed at 08:50 and never revised it. Arjun filed at 08:07 and revised it four times. Zeynep filed at 09:22 and never revised it. Bruno filed at 10:25 and revised it twice. Rafael filed at 09:46 and revised it four times. Priya filed at 08:58 and revised it twice. Mara filed at 08:21 and revised it three times. Jonas filed at 09:53 and revised it twice. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+     "expected": "Zeynep",
+     "id": "p4"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Dario won the race. Yuki finished immediately after Priya. Xavier finished immediately after Katya. Xavier finished immediately before Kofi. Dario finished immediately before Katya. Kofi finished immediately before Priya. Yuki finished immediately before Zeynep. Zeynep finished immediately before Teo. Who finished third? Respond with only the name.",
+     "expected": "Xavier",
+     "id": "p5"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 22 lamps, 30 tables, 50 cabinets, twenty-six chairs and 55 stools. A delivery of seven cabinets planned for the 20th was cancelled and never arrived. On the 6th a delivery brought seven chairs, 20 stools and nineteen lamps. On the 12th a clear-out removed 14 cabinets and four chairs. On the 13th another delivery brought nine lamps and 15 cabinets. Nothing else came in or went out. Counting lamps and cabinets together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "29",
+     "id": "p6"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from seven analysts this morning. Ines filed at 09:01 and revised it four times. Farah filed at 09:51 and revised it once. Sanjay filed at 08:53 and never revised it. Paulo filed at 09:14 and never revised it. Lucia filed at 10:28 and revised it four times. Beatriz filed at 09:45 and revised it once. Emeka filed at 09:35 and revised it twice. Among the analysts who revised their report at most once, who filed latest? Respond with only the name.",
+     "expected": "Farah",
+     "id": "p7"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Ivan had thirty-six stamps. This week Ines starts with twenty stamps. This week Ivan starts with twenty-one stamps. This week Omar starts with 58 stamps. Ines hands two stamps to Ivan. Omar gives Ivan half of the stamps Omar has at that moment. Ivan offers to give Ines twenty-one stamps, but Ines turns the offer down. Ines plans to hand thirty stamps to Omar, then changes plans and keeps them. Ines gives Ivan 7 stamps. No other stamps change hands. How many stamps does Ines have at the end of the week? Respond with only the integer.",
+     "expected": "11",
+     "id": "p8"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Anika won the race. Nikos finished immediately before Sanjay. Rafael finished immediately before Olga. Sanjay finished immediately before Farah. Rafael finished immediately after Farah. Xavier finished immediately before Omar. Anika finished immediately before Nikos. Xavier finished immediately after Olga. Who finished third? Respond with only the name.",
+     "expected": "Sanjay",
+     "id": "p9"
+    }
+   ]
+  },
+  {
+   "seed": "bf3324857ca08f8e23678d3e518349e74ae43aa62cecd09c62f96448f4d69525",
+   "probes": [
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Anika had 53 marbles. This week Goran starts with 37 marbles. This week Anika starts with 17 marbles. This week Jonas starts with twenty-one marbles. Anika receives 5 marbles from Goran. Jonas offers to give Goran fourteen marbles, but Goran turns the offer down. Jonas hands five marbles to Anika. Jonas gives Goran half of the marbles Jonas has at that moment. Anika offers to give Jonas two marbles, but Jonas turns the offer down. No other marbles change hands. How many marbles does Anika have at the end of the week? Respond with only the integer.",
+     "expected": "27",
+     "id": "p1"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 16 stools, 25 chairs, thirty-eight cabinets, eighteen desks and fifty shelves. A delivery of 17 shelves planned for the 18th was cancelled and never arrived. On the 5th a delivery brought 7 shelves, 6 chairs and 11 stools. On the 8th a clear-out removed three desks and six cabinets. On the 9th another delivery brought eleven shelves and nine cabinets. Nothing else came in or went out. Counting shelves and cabinets together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "21",
+     "id": "p2"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Ines filed at 09:47 and revised it twice. Anika filed at 10:23 and never revised it. Nikos filed at 08:51 and revised it three times. Nadia filed at 09:16 and never revised it. Priya filed at 09:56 and revised it three times. Yara filed at 08:40 and revised it three times. Bruno filed at 10:20 and revised it twice. Talia filed at 10:14 and never revised it. Among the analysts who revised their report at most once, who filed earliest? Respond with only the name.",
+     "expected": "Nadia",
+     "id": "p3"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Anika won the race. Dario finished immediately after Xavier. Yuki finished immediately before Kofi. Ruth finished immediately before Sanjay. Ruth finished immediately after Kofi. Sanjay finished immediately before Xavier. Farah finished immediately before Yuki. Anika finished immediately before Farah. Who finished third? Respond with only the name.",
+     "expected": "Yuki",
+     "id": "p4"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 43 chairs, thirty-three cabinets, 21 shelves, 24 tables and 36 desks. On the 10th a delivery brought 18 desks, 5 cabinets and twenty shelves. On the 17th a clear-out removed six cabinets and thirteen shelves. On the 19th another delivery brought thirteen desks and 7 shelves. A delivery of 13 desks planned for the 26th was cancelled and never arrived. Nothing else came in or went out. Counting desks and shelves together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "45",
+     "id": "p5"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the south hall, the review starts at 14:15. The inspection starts 25 minutes before the review starts. The interview starts twenty minutes after the inspection starts. In the east wing, the stand-up starts at 12:00. The budget meeting starts ten minutes after the stand-up starts. The workshop starts 35 minutes before the budget meeting starts. Afterwards, the workshop is rescheduled to start three quarters of an hour later than planned. At what time does the workshop in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "12:20",
+     "id": "p6"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Emeka won the race. Yuki finished immediately after Emeka. Ines finished immediately after Sanjay. Anika finished immediately after Goran. Sanjay finished immediately after Bruno. Bruno finished immediately after Arjun. Yuki finished immediately before Arjun. Goran finished immediately after Ines. Who finished fourth? Respond with only the name.",
+     "expected": "Bruno",
+     "id": "p7"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Chiara had forty-two coins. This week Chiara starts with 45 coins. This week Ivan starts with 43 coins. This week Ingrid starts with twenty-four coins. Chiara asks Ingrid to send over 13 coins, and Ingrid refuses. Ivan hands 14 coins to Ingrid. Ingrid asks Ivan to send over 19 coins, and Ivan refuses. Ingrid gives Chiara 7 coins. Ingrid receives 24 coins from Chiara. No other coins change hands. How many coins does Chiara have at the end of the week? Respond with only the integer.",
+     "expected": "28",
+     "id": "p8"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the west wing, the workshop starts at 15:15. The tasting starts a quarter of an hour before the workshop starts. The review starts 35 minutes after the tasting starts. In the east wing, the supplier call starts at 10:15. The inspection starts three quarters of an hour before the supplier call starts. The interview starts ten minutes before the inspection starts. Afterwards, the interview is rescheduled to start half an hour later than planned. At what time does the interview in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "09:50",
+     "id": "p9"
+    }
+   ]
+  },
+  {
+   "seed": "15c82e87a12f5b1c2493adbcc1fd0b010c5846d227a50aaf1032b89d84b02350",
+   "probes": [
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Ivan had 27 marbles. This week Katya starts with eighteen marbles. This week Sanjay starts with 34 marbles. This week Ivan starts with 49 marbles. Ivan offers to give Katya three marbles, but Katya turns the offer down. Katya hands fifteen marbles to Sanjay. Sanjay hands nine marbles to Katya. Ivan gives Katya 4 marbles. Sanjay offers to give Ivan twenty-one marbles, but Ivan turns the offer down. No other marbles change hands. How many marbles does Katya have at the end of the week? Respond with only the integer.",
+     "expected": "16",
+     "id": "p1"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Leila filed at 10:42 and revised it once. Nikos filed at 10:09 and revised it three times. Ingrid filed at 09:11 and revised it once. Kofi filed at 10:31 and revised it four times. Yuki filed at 09:08 and revised it three times. Chiara filed at 09:15 and revised it four times. Umar filed at 09:22 and revised it three times. Farah filed at 09:41 and revised it twice. Among the analysts who revised their report exactly once, who filed earliest? Respond with only the name.",
+     "expected": "Ingrid",
+     "id": "p2"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Omar filed at 08:06 and never revised it. Bruno filed at 08:28 and revised it once. Hana filed at 10:03 and revised it twice. Rafael filed at 10:52 and revised it once. Paulo filed at 08:14 and revised it four times. Xavier filed at 10:24 and never revised it. Mara filed at 08:07 and revised it once. Wanjiru filed at 08:38 and revised it twice. Among the analysts who revised their report at least twice, who filed earliest? Respond with only the name.",
+     "expected": "Paulo",
+     "id": "p3"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Ines had 48 marbles. This week Ines starts with fifty-four marbles. This week Hana starts with twenty-four marbles. This week Teo starts with 25 marbles. Ines gives Hana half of the marbles Ines has at that moment. Ines hands sixteen marbles to Teo. Hana receives ten marbles from Ines. Ines plans to hand twelve marbles to Hana, then changes plans and keeps them. Hana asks Ines to send over 26 marbles, and Ines refuses. No other marbles change hands. How many marbles does Hana have at the end of the week? Respond with only the integer.",
+     "expected": "61",
+     "id": "p4"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 50 desks, 38 lamps, twenty-two chairs, thirty-two shelves and fifty-nine tables. On the 17th a delivery brought five lamps, three shelves and 2 desks. A delivery of thirteen chairs planned for the 26th was cancelled and never arrived. On the 21st a clear-out removed 5 shelves and 13 chairs. On the 22nd another delivery brought sixteen lamps and 18 shelves. Nothing else came in or went out. Counting lamps and chairs together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "8",
+     "id": "p5"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Ruth won the race. Farah finished immediately after Bruno. Sanjay finished immediately after Mara. Anika finished immediately after Ruth. Talia finished immediately after Sanjay. Bruno finished immediately after Talia. Mara finished immediately after Anika. Farah finished immediately before Xavier. Who finished third? Respond with only the name.",
+     "expected": "Mara",
+     "id": "p6"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the north hall, the workshop starts at 14:15. The tasting starts an hour and a half before the workshop starts. The handover starts three quarters of an hour before the tasting starts. In the west wing, the inspection starts at 13:15. The demo starts ten minutes before the inspection starts. The site visit starts 50 minutes after the demo starts. Afterwards, the demo is rescheduled to start an hour and a half later than planned. At what time does the demo in the west wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "14:35",
+     "id": "p7"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Yara won the race. Leila finished immediately after Tomas. Chiara finished immediately before Tomas. Sanjay finished immediately before Rafael. Talia finished immediately after Yara. Sanjay finished immediately after Bruno. Chiara finished immediately after Talia. Bruno finished immediately after Leila. Who finished third? Respond with only the name.",
+     "expected": "Chiara",
+     "id": "p8"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the south hall, the interview starts at 13:00. The budget meeting starts 50 minutes after the interview starts. The demo starts an hour and a half after the budget meeting starts. In the east wing, the site visit starts at 09:45. The stand-up starts an hour after the site visit starts. The rehearsal starts half an hour before the stand-up starts. At what time does the rehearsal in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "10:15",
+     "id": "p9"
+    }
+   ]
+  },
+  {
+   "seed": "3852b5d0a469fe537a0c3dc954d266460733ae065a2844cdcc0275f88f7f2a24",
+   "probes": [
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from eight analysts this morning. Mehmet filed at 09:26 and revised it once. Priya filed at 08:07 and revised it once. Paulo filed at 10:56 and never revised it. Ingrid filed at 10:26 and revised it twice. Emeka filed at 08:51 and revised it twice. Xavier filed at 08:12 and revised it twice. Lucia filed at 09:28 and never revised it. Teo filed at 08:32 and revised it twice. Among the analysts who revised their report at least twice, who filed latest? Respond with only the name.",
+     "expected": "Ingrid",
+     "id": "p1"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the north hall, the site visit starts at 09:30. The inspection starts ten minutes after the site visit starts. The interview starts twenty minutes after the inspection starts. In the west wing, the review starts at 09:00. The supplier call starts an hour before the review starts. The stand-up starts half an hour before the supplier call starts. At what time does the interview in the north hall start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "10:00",
+     "id": "p2"
+    },
+    {
+     "template": "attribution",
+     "kind": "name",
+     "prompt": "Reports came in from seven analysts this morning. Leila filed at 08:22 and revised it twice. Farah filed at 10:19 and revised it twice. Mehmet filed at 09:10 and revised it three times. Lars filed at 09:29 and revised it four times. Hana filed at 09:35 and revised it four times. Ingrid filed at 09:47 and revised it three times. Talia filed at 08:00 and never revised it. Among the analysts who revised their report at least three times, who filed earliest? Respond with only the name.",
+     "expected": "Mehmet",
+     "id": "p3"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Umar had twenty tickets. This week Kofi starts with twenty-seven tickets. This week Umar starts with thirty-three tickets. This week Ingrid starts with 44 tickets. Umar gives Kofi 11 tickets. Umar hands two tickets to Ingrid. Kofi offers to give Ingrid 30 tickets, but Ingrid turns the offer down. Ingrid asks Kofi to send over eighteen tickets, and Kofi refuses. Kofi receives thirteen tickets from Umar. No other tickets change hands. How many tickets does Kofi have at the end of the week? Respond with only the integer.",
+     "expected": "51",
+     "id": "p4"
+    },
+    {
+     "template": "schedule",
+     "kind": "time",
+     "prompt": "In the east wing, the supplier call starts at 12:00. The safety drill starts 50 minutes after the supplier call starts. The rehearsal starts forty minutes after the safety drill starts. In the south hall, the review starts at 14:00. The handover starts twenty minutes after the review starts. The workshop starts ten minutes before the handover starts. Afterwards, the rehearsal is rescheduled to start 50 minutes earlier than planned. At what time does the rehearsal in the east wing start? Respond with only the time, in 24-hour HH:MM format.",
+     "expected": "12:40",
+     "id": "p5"
+    },
+    {
+     "template": "ledger",
+     "kind": "int",
+     "prompt": "Last month Goran had 67 marbles. This week Teo starts with 32 marbles. This week Nikos starts with fifty-eight marbles. This week Goran starts with 19 marbles. Teo offers to give Goran 11 marbles, but Goran turns the offer down. Nikos receives 4 marbles from Goran. Nikos hands 11 marbles to Teo. Teo asks Goran to send over six marbles, and Goran refuses. Nikos gives Goran 6 marbles. No other marbles change hands. How many marbles does Goran have at the end of the week? Respond with only the integer.",
+     "expected": "21",
+     "id": "p6"
+    },
+    {
+     "template": "ordering",
+     "kind": "name",
+     "prompt": "In a race with eight runners there were no ties. Emeka won the race. Olga finished immediately before Mehmet. Talia finished immediately before Mara. Mehmet finished immediately before Hana. Farah finished immediately after Hana. Arjun finished immediately after Farah. Talia finished immediately after Arjun. Olga finished immediately after Emeka. Who finished third? Respond with only the name.",
+     "expected": "Mehmet",
+     "id": "p7"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held forty-five shelves, thirty-three tables, 8 stools, 50 chairs and 42 lamps. A delivery of 5 lamps planned for the 27th was cancelled and never arrived. On the 3rd a delivery brought nineteen shelves, 11 chairs and thirteen tables. On the 12th a clear-out removed eight lamps and 5 chairs. On the 16th another delivery brought seventeen chairs and 5 shelves. Nothing else came in or went out. Counting chairs and lamps together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "15",
+     "id": "p8"
+    },
+    {
+     "template": "delta",
+     "kind": "int",
+     "prompt": "At the start of the month the storeroom held 54 chairs, forty-nine cabinets, twenty-four tables, fifty-four lamps and 59 stools. A delivery of nineteen stools planned for the 25th was cancelled and never arrived. On the 7th a delivery brought 20 stools, 13 cabinets and 17 lamps. On the 9th a clear-out removed 12 cabinets and ten stools. On the 10th another delivery brought 5 stools and eighteen cabinets. Nothing else came in or went out. Counting cabinets and stools together, how many more of them were there at the end of the month than at the start? Respond with only the integer.",
+     "expected": "34",
+     "id": "p9"
+    }
+   ]
+  }
+ ]
+}
