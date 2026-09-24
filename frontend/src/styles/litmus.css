@@ -1,0 +1,721 @@
+/* ==========================================================================
+   Litmus, consensus proof of agent capability
+   Windows 98 desktop UI. Pure HTML + CSS, no frameworks, no build step.
+
+   Typography: system stack only (no webfont required).
+     Tahoma -> MS Sans Serif -> Microsoft Sans Serif -> Geneva -> Verdana
+   ========================================================================== */
+
+:root {
+  --face:          #c0c0c0;   /* panel / chrome grey            */
+  --face-light:    #dfdfdf;
+  --highlight:     #ffffff;
+  --shadow:        #808080;
+  --dark-shadow:   #0a0a0a;
+  --desktop:       #008080;   /* classic teal desktop           */
+  --title-active:  linear-gradient(90deg, #000080, #1084d0);
+  --title-idle:    linear-gradient(90deg, #808080, #b5b5b5);
+  --ink:           #000000;
+  --ink-soft:      #303030;
+  --ink-mute:      #505050;
+  --ink-faint:     #707070;
+  --field:         #ffffff;
+  --warning-face:  #ffffcc;
+  --verdict-green: #008000;
+  --verdict-red:   #a80000;
+  --verdict-amber: #c8b400;
+  --link:          #0000cc;
+}
+
+/* --- 3D bevel primitives -------------------------------------------------- */
+
+.bevel-raised  { box-shadow: inset -1px -1px var(--dark-shadow), inset 1px 1px var(--highlight), inset -2px -2px var(--shadow), inset 2px 2px var(--face-light); }
+.bevel-pressed { box-shadow: inset 1px 1px var(--dark-shadow), inset -1px -1px var(--highlight), inset 2px 2px var(--shadow), inset -2px -2px var(--face-light); }
+.bevel-groove  { box-shadow: inset -1px -1px var(--highlight), inset 1px 1px var(--shadow); }
+.bevel-field   { box-shadow: inset -1px -1px var(--highlight), inset 1px 1px var(--dark-shadow), inset -2px -2px var(--face-light), inset 2px 2px var(--shadow); }
+
+/* --- base ---------------------------------------------------------------- */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #004040;
+}
+
+body {
+  font-family: Tahoma, "MS Sans Serif", "Microsoft Sans Serif", Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  color: var(--ink);
+  -webkit-font-smoothing: none;
+}
+
+svg { shape-rendering: crispEdges; }
+
+a        { color: var(--link); text-decoration: underline; }
+a:hover  { color: #0000ff; text-decoration: underline; }
+
+::selection { background: #000080; color: #fff; }
+
+input, select, button { font-family: inherit; font-size: 11px; }
+
+/* --- screen scaffolding (one desktop per designed screen) ---------------- */
+
+.screen-list   { display: flex; flex-direction: column; gap: 28px; padding: 22px; }
+.screen        { display: flex; flex-direction: column; gap: 8px; }
+.screen-caption {
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9fd4d4;
+}
+
+/* --- desktop ------------------------------------------------------------- */
+
+.desktop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 620px;
+  background: var(--desktop);
+  overflow: hidden;
+  user-select: none;
+}
+
+.desktop-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 28px;
+  padding: 3px 4px;
+  background: var(--face);
+  z-index: 900;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-left: 6px;
+}
+.brand-name    { font-size: 17px; font-weight: bold; letter-spacing: .2px; }
+.brand-tagline { font-size: 11px; color: #404040; }
+
+.header-spacer { flex: 1; }
+
+.desktop-main {
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+
+.desktop-watermark {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  width: 330px;
+  height: 64px;
+  opacity: .15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --- wallet -------------------------------------------------------------- */
+
+.wallet-connect-button {
+  background: var(--face);
+  border: none;
+  padding: 3px 12px;
+  margin-right: 4px;
+  color: var(--ink);
+  cursor: default;
+}
+.wallet-connect-button:active { box-shadow: inset 1px 1px var(--dark-shadow), inset -1px -1px var(--highlight), inset 2px 2px var(--shadow), inset -2px -2px var(--face-light); padding: 4px 11px 2px 13px; }
+
+.wallet-panel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 6px;
+  margin-right: 4px;
+}
+.wallet-network { font-weight: bold; }
+.wallet-field {
+  padding: 1px 5px;
+  background: var(--field);
+  color: var(--ink);
+}
+.wallet-disconnect-button {
+  background: var(--face);
+  border: none;
+  padding: 2px 7px;
+  color: var(--ink);
+  cursor: default;
+}
+
+/* --- icon dock ----------------------------------------------------------- */
+
+.icon-dock {
+  position: absolute;
+  top: 20px;
+  left: 14px;
+  width: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  z-index: 1;
+}
+
+.dock-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 2px;
+  cursor: default;
+  text-decoration: none;
+}
+.dock-icon  { width: 32px; height: 32px; display: block; }
+.dock-label {
+  color: #fff;
+  text-align: center;
+  line-height: 1.3;
+  padding: 1px 3px;
+  text-shadow: 1px 1px 0px #000;
+}
+.dock-item--active .dock-label {
+  background: #000080;
+  text-shadow: none;
+  outline: 1px dotted #fff;
+  outline-offset: -1px;
+}
+
+/* --- window area --------------------------------------------------------- */
+
+.window-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px 24px 126px;
+  position: relative;
+  z-index: 10;
+}
+
+.window {
+  width: min(900px, 100%);
+  background: var(--face);
+  padding: 3px;
+}
+.window--certificate { width: min(800px, 100%); }
+.window--how-it-works { width: min(720px, 100%); }
+.window--agents      { width: 360px; }
+.window--properties  { width: 390px; }
+.window--dialog      { width: 420px; }
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 20px;
+  padding: 0 2px 0 3px;
+  background: var(--title-active);
+  cursor: default;
+}
+.title-bar--inactive { background: var(--title-idle); }
+.title-bar-icon { width: 14px; height: 14px; display: block; }
+.title-bar-text  { color: #fff; font-weight: bold; flex: 1; padding-left: 2px; }
+
+.title-button {
+  width: 16px;
+  height: 14px;
+  background: var(--face);
+  border: none;
+  padding: 0;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 1;
+}
+.title-button--minimize { align-items: flex-end; }
+.title-button--minimize .minimize-glyph { display: block; width: 8px; height: 2px; background: #000; margin-bottom: 2px; }
+
+.window-body { padding: 8px; }
+.window-body--scroll { max-height: 74vh; overflow: auto; }
+.window-body--document {
+  margin: 3px;
+  padding: 14px 16px;
+  background: var(--field);
+  user-select: text;
+}
+.window-body--properties { padding: 12px; }
+
+/* --- buttons ------------------------------------------------------------- */
+
+.win-button {
+  background: var(--face);
+  border: none;
+  padding: 4px 12px;
+  color: var(--ink);
+  cursor: default;
+}
+.win-button:active { box-shadow: inset 1px 1px var(--dark-shadow), inset -1px -1px var(--highlight), inset 2px 2px var(--shadow), inset -2px -2px var(--face-light); }
+.win-button--verify  { padding: 4px 14px; font-weight: bold; }
+.win-button--primary { padding: 5px 16px; font-weight: bold; }
+.win-button--wide    { padding: 4px 18px; }
+.win-button--disabled { color: var(--shadow); text-shadow: 1px 1px var(--highlight); }
+
+/* --- verifier ------------------------------------------------------------ */
+
+.verify-both-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.gate-note { color: #404040; }
+
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+@media (max-width: 760px) {
+  .agent-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+.group-panel { padding: 12px; }
+.group-panel + .group-panel-manual { margin-top: 10px; }
+.group-panel-manual { padding: 12px; margin-top: 10px; }
+.group-title { font-weight: bold; font-size: 12px; margin-bottom: 8px; }
+
+.agent-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.agent-name { font-weight: bold; font-size: 12px; }
+.agent-url  { color: var(--ink-mute); font-size: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.agent-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3px 8px;
+  margin-bottom: 8px;
+}
+.meta-key   { color: var(--ink-soft); }
+.meta-value { font-weight: bold; }
+
+/* --- progress / step states --------------------------------------------- */
+
+.progress-panel {
+  margin-top: 10px;
+  padding: 8px;
+  background: var(--face);
+}
+.progress-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.hourglass-icon { width: 16px; height: 16px; display: block; flex: none; }
+.step-label { font-weight: bold; }
+.step-spacer { flex: 1; }
+.elapsed-time { padding: 1px 5px; background: var(--face); }
+
+.progress-bar {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  background: var(--face);
+  margin-bottom: 6px;
+}
+.progress-block     { flex: 1; height: 12px; background: var(--face); }
+.progress-block--on { background: #000080; }
+
+.phase-line  { margin-bottom: 3px; }
+.notice-line { color: var(--ink-faint); font-size: 10px; }
+
+/* --- verdict ------------------------------------------------------------- */
+
+.verdict-block { margin-top: 10px; }
+
+.verdict-badge {
+  padding: 10px 12px;
+  box-shadow: inset -1px -1px var(--dark-shadow), inset 1px 1px rgba(255,255,255,.5);
+}
+.verdict-badge--consistent   { background: var(--verdict-green); color: #fff; }
+.verdict-badge--inconsistent { background: var(--verdict-red);   color: #fff; }
+.verdict-badge--inconclusive { background: var(--verdict-amber); color: #000; }
+.verdict-badge--large { padding: 12px 14px; }
+
+.verdict-name     { font-size: 26px; font-weight: bold; letter-spacing: .5px; line-height: 1.1; }
+.verdict-badge--large .verdict-name { font-size: 30px; line-height: 1.05; }
+.verdict-subtitle { font-size: 11px; margin-top: 3px; }
+
+.result-summary {
+  margin-top: 6px;
+  padding: 6px 8px;
+  background: var(--field);
+}
+.probe-count { font-weight: bold; margin-bottom: 2px; }
+
+.result-actions {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tx-link { font-size: 10px; }
+
+/* --- manual verification form ------------------------------------------- */
+
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.field-row--inline { margin-bottom: 8px; flex-wrap: wrap; }
+.field-label  { width: 92px; flex: none; }
+.field-label--loose { margin-left: 10px; width: auto; }
+
+.text-input {
+  padding: 3px 4px;
+  border: none;
+  background: var(--field);
+  color: var(--ink);
+}
+.text-input--url   { flex: 1; }
+.text-input--model { width: 200px; }
+.text-input--readonly { width: 100%; margin-top: 8px; }
+
+.select-input {
+  padding: 2px;
+  background: var(--field);
+  color: var(--ink);
+  border: none;
+}
+
+.warning-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 5px 8px;
+  margin-bottom: 4px;
+  background: var(--warning-face);
+}
+.warning-icon { width: 16px; height: 16px; display: block; flex: none; margin-top: 1px; }
+
+.verify-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+.help-line { color: var(--ink-mute); font-size: 10px; }
+
+.result-split {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.result-split > .verdict-badge,
+.result-split > .result-summary-card { flex: 1; min-width: 240px; }
+.result-summary-card { padding: 8px; background: var(--field); margin-top: 0; }
+
+.ending-panel {
+  margin-top: 10px;
+  padding: 8px;
+  background: var(--field);
+}
+.ending-row { display: flex; gap: 8px; }
+.ending-icon { width: 24px; height: 24px; display: block; flex: none; }
+
+/* --- certificate --------------------------------------------------------- */
+
+.certificate-head {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.certificate-head > .verdict-badge { flex: 1; min-width: 250px; }
+.verdict-meta { margin-top: 8px; font-weight: bold; }
+
+.disclaimer-panel {
+  flex: 1;
+  min-width: 280px;
+  padding: 8px 10px;
+  background: var(--warning-face);
+}
+.disclaimer-row  { display: flex; gap: 8px; }
+.disclaimer-text { line-height: 1.5; }
+
+.probe-table {
+  margin-top: 12px;
+  background: var(--field);
+}
+.probe-table-head,
+.probe-row {
+  display: grid;
+  grid-template-columns: 82px 1fr 74px 1fr 66px;
+}
+.probe-table-head { background: var(--face); }
+.probe-table-head .probe-cell {
+  font-weight: bold;
+  margin: 1px;
+  box-shadow: inset -1px -1px var(--shadow), inset 1px 1px var(--highlight);
+}
+.probe-row { border-top: 1px solid var(--face-light); }
+.probe-cell { padding: 6px; line-height: 1.5; }
+.probe-cell + .probe-cell { border-left: 1px solid var(--face-light); }
+.probe-cell--template { font-weight: bold; }
+.probe-cell--answer   { word-break: break-word; }
+.probe-row { cursor: pointer; }
+.probe-row:not(.probe-row--expanded) .probe-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.probe-table-hint { margin-top: 12px; }
+.probe-table-hint + .probe-table { margin-top: 4px; }
+.probe-cell--result   { display: flex; align-items: flex-start; gap: 4px; }
+.result-icon  { width: 14px; height: 14px; display: block; flex: none; }
+.result-label { font-weight: bold; }
+
+.certificate-foot {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.properties-panel { flex: 1; min-width: 300px; padding: 8px; }
+.panel-title { font-weight: bold; margin-bottom: 8px; }
+.properties-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px 10px;
+}
+.prop-key   { color: var(--ink-soft); }
+.prop-value { word-break: break-all; }
+.prop-value--sentence { word-break: normal; }  /* prose values break between words, not inside them */
+.prop-value--hash { font-family: "Courier New", monospace; font-size: 10px; }
+.prop-note  { color: var(--ink-faint); font-size: 10px; }
+
+.onchain-panel { width: 260px; flex: none; padding: 8px; }
+.onchain-list  { display: flex; flex-direction: column; gap: 6px; }
+.hash-short    { font-family: "Courier New", monospace; font-size: 10px; color: #404040; }
+
+.empty-state {
+  padding: 22px;
+  text-align: center;
+  color: #404040;
+}
+
+/* --- how it works -------------------------------------------------------- */
+
+.document { max-width: 640px; }
+.doc-heading { font-size: 14px; font-weight: bold; margin-bottom: 5px; }
+.doc-text { margin: 0 0 16px; line-height: 1.65; text-wrap: pretty; }
+.doc-text--last { margin-bottom: 0; }
+.doc-rule { height: 1px; background: var(--shadow); margin: 4px 0 16px; box-shadow: 0 1px var(--highlight); }
+
+.flow-diagram {
+  display: grid;
+  grid-template-columns: 1fr 18px 1fr;
+  gap: 8px 4px;
+  align-items: stretch;
+  margin-bottom: 18px;
+}
+.flow-box { padding: 9px 11px; background: var(--face); }
+.flow-box-title { font-weight: bold; margin-bottom: 4px; }
+.flow-box-text  { line-height: 1.6; }
+.flow-arrow { display: flex; align-items: center; justify-content: center; }
+.flow-arrow img { width: 16px; height: 16px; display: block; }
+
+.about-links { margin-top: 8px; display: flex; flex-direction: column; gap: 4px; }
+.about-author { color: #404040; }
+.about-author strong { color: var(--ink); font-weight: normal; }
+
+/* --- agents folder ------------------------------------------------------- */
+
+.folder-view {
+  margin: 3px;
+  padding: 14px;
+  min-height: 150px;
+  background: var(--field);
+}
+.folder-items { display: flex; gap: 22px; }
+.folder-item {
+  width: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: default;
+}
+.folder-item-icon  { width: 32px; height: 32px; display: block; }
+.folder-item-label { text-align: center; line-height: 1.25; }
+
+.status-bar {
+  margin: 0 3px 3px;
+  padding: 3px 6px;
+  color: var(--ink-soft);
+}
+
+/* --- properties sheet ---------------------------------------------------- */
+
+.properties-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--shadow);
+}
+.properties-head-icon { width: 32px; height: 32px; display: block; flex: none; }
+.properties-head-name { font-size: 13px; font-weight: bold; }
+.properties-description { margin: 12px 0 0; line-height: 1.6; }
+.properties-actions { display: flex; justify-content: flex-end; margin-top: 14px; }
+
+/* --- error dialog -------------------------------------------------------- */
+
+.dialog-body {
+  padding: 18px 16px 14px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.dialog-icon { width: 32px; height: 32px; display: block; flex: none; }
+.dialog-text { line-height: 1.6; padding-top: 4px; }
+.dialog-actions { display: flex; justify-content: center; padding: 0 12px 14px; }
+
+/* --- taskbar ------------------------------------------------------------- */
+
+.taskbar {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 30px;
+  padding: 3px;
+  background: var(--face);
+  box-shadow: inset 0 1px var(--highlight), inset 0 2px var(--face-light);
+  z-index: 4000;
+}
+
+.start-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 22px;
+  padding: 0 8px 0 5px;
+  margin-right: 5px;
+  background: var(--face);
+  font-weight: bold;
+  cursor: default;
+}
+.start-button:active { box-shadow: inset 1px 1px var(--dark-shadow), inset -1px -1px var(--highlight), inset 2px 2px var(--shadow), inset -2px -2px var(--face-light); }
+.start-logo { width: 16px; height: 16px; display: block; flex: none; }
+
+.taskbar-divider {
+  width: 3px;
+  height: 20px;
+  margin-right: 4px;
+  box-shadow: inset 1px 0 var(--shadow), inset -1px 0 var(--highlight);
+}
+
+.taskbar-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 130px;
+  height: 22px;
+  padding: 0 8px;
+  background: var(--face);
+  border: none;
+  color: var(--ink);
+  cursor: default;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.taskbar-item--active { font-weight: bold; }
+
+/* ==========================================================================
+   App additions. The ONLY changes to the design, both functional:
+   the mockup was a fixed-height desktop inside .screen-list, and in the app the
+   desktop is the page; and the dock needs to be clickable.
+   ========================================================================== */
+
+html, body, #root  { height: 100%; }
+#root > div        { height: 100%; }   /* RainbowKit wraps the app in a div of its own */
+.desktop           { min-height: 100%; }
+
+/* .window-area spans the whole desktop (padded, not offset), so it sat on top of the dock and
+   swallowed its clicks. Nothing was clickable in the mockup, so it never showed there. */
+.icon-dock { z-index: 20; }
+
+/* Certificate history (added 2026-09-22: the list of verifications read from
+   the chain). Same pieces as the rest: a sunken field, a header row in face grey, Windows
+   selection colours. */
+.history-panel { padding: 8px; margin-bottom: 12px; background: var(--face); }
+.history-head  { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.history-head .panel-title { margin-bottom: 0; }
+
+.history-table { background: var(--field); max-height: 150px; overflow: auto; }
+.history-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 110px 270px;
+  cursor: default;
+}
+.history-row--head { background: var(--face); position: sticky; top: 0; }
+.history-row--head .history-cell {
+  font-weight: bold;
+  margin: 1px;
+  box-shadow: inset -1px -1px var(--shadow), inset 1px 1px var(--highlight);
+}
+.history-row + .history-row { border-top: 1px solid var(--face-light); }
+.history-row--selected { background: #000080; color: #fff; }
+.history-cell  { padding: 4px 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.history-empty { padding: 10px; color: var(--ink-soft); }
+
+/* "Connect your agent" window (added 2026-09-22). Same pieces as the rest:
+   grooved panel, sunken white field, Courier for code. */
+.window--connect-agent { width: min(760px, 100%); }
+
+.code-panel { padding: 8px; margin-bottom: 14px; background: var(--face); }
+.code-head  { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.code-head .panel-title { margin-bottom: 0; }
+.code-block {
+  margin: 0;
+  padding: 8px;
+  max-height: 260px;
+  overflow: auto;
+  background: var(--field);
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  line-height: 1.45;
+  white-space: pre;
+  user-select: text;
+}
+
+.rules-list { margin: 0 0 16px; padding-left: 18px; line-height: 1.65; }
+.rules-list li { margin-bottom: 4px; }
+
+/* Three boxes in a row for "Connect your agent" (the How it works diagram is a 2x2 grid). */
+.flow-diagram--three { grid-template-columns: 1fr 18px 1fr 18px 1fr; }
