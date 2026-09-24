@@ -1,0 +1,41 @@
+# Secrets. Never commit any of these.
+.env
+.env.*
+*.pem
+*.key
+**/account.json
+
+# Dependencies and build output
+node_modules/
+dist/
+.wrangler/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local run output
+artifacts/
+scripts/out/
+
+# Calibration: only the scripts and the data the README cites are published.
+calibration/*
+!calibration/test_calibration.py
+!calibration/test_difficulty.py
+!calibration/verdict_math.py
+!calibration/freeze_prob.py
+!calibration/difficulty-v2.jsonl
+!calibration/plan-v2-freeze1.json
+!calibration/results-v2-freeze1.jsonl
+!calibration/plan-v2-freeze2.json
+!calibration/results-v2-freeze2.jsonl
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Vite cache
+.vite/
