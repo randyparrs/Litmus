@@ -1,0 +1,16 @@
+# Preset agents as a Cloudflare Worker (public URL, free plan). The logic is agent-core.mjs,
+# shared with the local server used for calibration.
+# The OpenRouter key is NOT here: it is a Worker secret, set with
+#   npx wrangler secret put OPENROUTER_API_KEY
+name = "acv-presets"
+main = "worker.mjs"
+compatibility_date = "2026-09-01"
+
+[vars]
+AGENT_A_MODEL = "meta-llama/llama-3.3-70b-instruct"
+AGENT_B_MODEL = "meta-llama/llama-3.2-3b-instruct"
+AGENT_A_PROVIDER = "coreweave/fp16"  # 2026-09-23, was novita (see agent-core.mjs)
+AGENT_B_PROVIDER = "cloudflare"  # 2026-09-24, was parasail (see agent-core.mjs)
+# Demo agent for the manual form (not calibrated, no pinned provider).
+AGENT_C_MODEL = "deepseek/deepseek-v4-flash"
+AGENT_D_MODEL = "google/gemma-4-31b-it"
