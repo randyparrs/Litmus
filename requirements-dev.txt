@@ -1,0 +1,8 @@
+# Python 3.12. Everything the tests, the linter and the calibration scripts need, pinned.
+#   py -3.12 -m pip install -r requirements-dev.txt
+genlayer-test==0.30.0rc2
+pytest==9.1.1
+eth-hash[pycryptodome]==0.8.0
+pycryptodome==3.23.0
+numpy==2.5.2
+genvm-linter==0.11.0
