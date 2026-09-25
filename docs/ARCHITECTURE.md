@@ -50,8 +50,11 @@ Deployed at `0xdaFb8Ec9696b8A03c4157AAbd9C1ebA5582023c9` (Studio Next, chain 619
 - `get_status()`: `CREATED` or `COMPLETED`. `get_certificate()`: the certificate as JSON (the
   base fields while `CREATED`). `get_probes()`: the probes with their expected answers, empty
   before `run()`, because the probes do not exist until then.
-- Every datetime comes from `gl.message.raw["datetime"]`, read in deterministic code. A
-  transaction without a datetime fails instead of deriving a seed from an empty string.
+- Every datetime, and through `verified_at` the seed, comes from `gl.message.raw["datetime"]`,
+  read in deterministic code. That key is not a documented field of the SDK: it was measured on
+  Studio Next, where the leader and the validators read the same value (the SDK has no
+  `gl.vm.get_timestamp()`). If the key is missing or empty, the constructor and `run()` fail with
+  `UserError("the transaction has no datetime")` instead of deriving a seed from an empty string.
 
 ## Verification flow
 
