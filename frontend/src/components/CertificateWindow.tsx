@@ -138,7 +138,7 @@ export function CertificateWindow({ selectedId, onSelect }: {
             </div>
           </div>
 
-          <div className="help-line probe-table-hint">Click a row to read the whole question.</div>
+          <div className="help-line probe-table-hint">Probes as observed by the leader. Click a row to read the whole question.</div>
           <div className="probe-table bevel-field">
             <div className="probe-table-head">
               <div className="probe-cell">Probe</div>
