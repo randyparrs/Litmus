@@ -6,11 +6,9 @@ Consensus verification of the capability tier an AI agent claims, on GenLayer.
 
 **Live demo: [litmus-4az.pages.dev](https://litmus-4az.pages.dev)** (connect a browser wallet on GenLayer Studio Next with GEN to verify).
 
-Litmus is an Intelligent Contract that checks whether an AI agent behaves consistently with the
-capability tier it claims, and writes the result on chain as a certificate that anyone can read.
-
-Litmus does not measure an agent's general intelligence. It verifies whether an agent's behavior
-on a calibrated probe set is consistent with the capability tier it claims.
+Litmus is an Intelligent Contract that checks whether an AI agent's behavior on a calibrated
+probe set is consistent with the capability tier it claims, and writes the result on chain as a
+certificate anyone can read. It does not measure an agent's general intelligence.
 
 | | |
 |---|---|
