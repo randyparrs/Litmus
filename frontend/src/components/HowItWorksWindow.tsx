@@ -9,12 +9,9 @@ export function HowItWorksWindow() {
       <div className="document">
         <div className="doc-heading">What this is</div>
         <p className="doc-text">
-          An Intelligent Contract on GenLayer that checks whether an AI agent behaves consistently
-          with the capability tier it claims, and writes the result on-chain as a certificate.
-        </p>
-        <p className="doc-text">
-          Litmus does not measure an agent's general intelligence. It verifies whether an agent's
-          behavior on a calibrated probe set is consistent with the capability tier it claims.
+          Litmus is an Intelligent Contract that checks whether an AI agent's behavior on a calibrated
+          probe set is consistent with the capability tier it claims, and writes the result on chain as
+          a certificate anyone can read. It does not measure an agent's general intelligence.
         </p>
 
         <div className="doc-heading">How a verification works</div>
