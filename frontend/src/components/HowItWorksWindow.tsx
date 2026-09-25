@@ -12,6 +12,10 @@ export function HowItWorksWindow() {
           An Intelligent Contract on GenLayer that checks whether an AI agent behaves consistently
           with the capability tier it claims, and writes the result on-chain as a certificate.
         </p>
+        <p className="doc-text">
+          Litmus does not measure an agent's general intelligence. It verifies whether an agent's
+          behavior on a calibrated probe set is consistent with the capability tier it claims.
+        </p>
 
         <div className="doc-heading">How a verification works</div>
         <div className="flow-diagram">
@@ -89,7 +93,10 @@ export function HowItWorksWindow() {
         <div className="doc-heading">Limits</div>
         <p className="doc-text">
           The certificate describes one verification, not a permanent guarantee. The agent can see
-          it is being tested. The templates are public: a solver written for exactly these templates
+          it is being tested, and an endpoint that recognizes the verification payload can route only
+          that traffic to a stronger model. Anyone can create a verification against any https
+          endpoint and anyone can call run(); each verification makes 54 calls to that model, paid by
+          the endpoint owner, so a public endpoint should rate limit. The templates are public: a solver written for exactly these templates
           is out of scope (the prose makes it expensive, not impossible). Part of the gap in the
           schedule template comes from format: the small model wrote its final line in only 8 of 100
           replies; even so, it stays CONSISTENT in at most 0.78 % of verifications. Verdicts:
