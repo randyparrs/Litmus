@@ -29,10 +29,13 @@ function field(item: unknown, key: string): string {
   return value == null ? '' : String(value);
 }
 
-/** The latest verifications created by the factory, newest first. */
-export async function fetchHistory(limit = 25): Promise<HistoryRow[]> {
-  const items = (await readView(makeClient(), FACTORY, 'get_verifications', [0, limit])) as unknown[];
-  return (items ?? [])
+/** The latest verifications created by the factory that have a certificate, newest first. A
+ *  verification whose run() never completed (status CREATED) has nothing to show and is left out.
+ *  One status read per row: keep `limit` small, the RPC allows 30 requests per minute. */
+export async function fetchHistory(limit = 12): Promise<HistoryRow[]> {
+  const client = makeClient();
+  const items = (await readView(client, FACTORY, 'get_verifications', [0, limit])) as unknown[];
+  const rows = (items ?? [])
     .map((item) => ({
       verificationId: field(item, 'verification_id'),
       instance: field(item, 'instance'),
@@ -43,6 +46,8 @@ export async function fetchHistory(limit = 25): Promise<HistoryRow[]> {
       requester: field(item, 'requester'),
     }))
     .filter((row) => row.verificationId && row.instance);
+  const statuses = await Promise.all(rows.map((row) => readView(client, row.instance, 'get_status', [])));
+  return rows.filter((_, i) => statuses[i] === 'COMPLETED');
 }
 
 // ---------------- Explorer links (Studio only, optional) ----------------
