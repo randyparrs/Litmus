@@ -123,7 +123,7 @@ export default function App() {
       <div className="desktop-header bevel-raised">
         <div className="brand">
           <span className="brand-name">Litmus</span>
-          <span className="brand-tagline">consensus proof of agent capability</span>
+          <span className="brand-tagline">consensus verification of the capability tier an AI agent claims</span>
         </div>
         <div className="header-spacer"></div>
         <WalletHeader wallet={wallet} />
