@@ -179,7 +179,8 @@ rotations, 0 ties, 0 `INCONCLUSIVE`, ambiguity check 0. `probe_set_version` was 
 
 ## Frontend
 
-- Reads use `readContract`, no indexer. The history comes from `get_verifications()`. Explorer
+- Reads use `readContract`, no indexer. The history comes from `get_verifications()` and shows
+  only verifications whose `run()` completed (`get_status()` is `COMPLETED`). Explorer
   links for TX 1 and TX 2 come from `sim_getTransactionsForAddress`, a Studio method; they are
   optional.
 - Polling every 10 s or more (the RPC allows 30 requests per minute). The instance is awaited

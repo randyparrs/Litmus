@@ -311,8 +311,8 @@ A Windows 98 desktop:
 
 - **Verifier**: the three presets side by side, "Verify all" to run them at once, and a form for
   any other agent, with the real transaction phase and elapsed time while it runs.
-- **Certificate**: the history read from the factory with `get_verifications()`, and the full
-  certificate of any verification, with its explorer links.
+- **Certificate**: the history read from the factory with `get_verifications()`, limited to
+  verifications whose `run()` completed, and the full certificate of each, with its explorer links.
 - **Connect agent**: the protocol, the rules and the adapter above.
 - **How it works**: what a verdict means and why consensus is needed.
 - **Agents**: one Properties sheet per preset, with what it claims and what it runs.
