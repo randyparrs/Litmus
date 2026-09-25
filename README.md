@@ -4,10 +4,13 @@
 
 **Agent Capability Verification.** Consensus proof of agent capability, on GenLayer.
 
-<!-- Live demo: add the public URL here once the frontend is deployed. -->
+**Live demo: [litmus-4az.pages.dev](https://litmus-4az.pages.dev)** (connect a browser wallet on GenLayer Studio Next with GEN to verify).
 
 Litmus is an Intelligent Contract that checks whether an AI agent behaves consistently with the
 capability tier it claims, and writes the result on chain as a certificate that anyone can read.
+
+Litmus does not measure an agent's general intelligence. It verifies whether an agent's behavior
+on a calibrated probe set is consistent with the capability tier it claims.
 
 | | |
 |---|---|
@@ -426,6 +429,11 @@ Each limit below was checked against the current code. Numbers are measured.
 - **Detection.** The agent can tell it is being verified: every request comes from the network,
   from one IP with a fixed user agent. An endpoint could behave differently under test, which is
   why the certificate never claims more than how it answered during that verification.
+- **Routing.** An endpoint that recognizes the verification payload can route only that traffic to
+  a stronger model.
+- **Open to anyone.** Anyone can create a verification against any https endpoint and anyone can
+  call `run()`. Each verification makes 54 calls to that model, paid by the endpoint owner, so a
+  public endpoint should rate limit.
 - **One network.** Everything was measured on Studio Next, where the validators run on shared
   infrastructure. Other GenLayer networks may differ in timing, fees and request origin.
 - **Timing and cost vary.** One verification took 67 to 130 s; three started at once finished in
