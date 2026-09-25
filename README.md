@@ -1,8 +1,8 @@
 # Litmus
 
-[![CI](https://github.com/randyparrs/Litmus/actions/workflows/ci.yml/badge.svg)](https://github.com/randyparrs/Litmus/actions/workflows/ci.yml)
+Consensus verification of the capability tier an AI agent claims, on GenLayer.
 
-**Agent Capability Verification.** Consensus proof of agent capability, on GenLayer.
+[![CI](https://github.com/randyparrs/Litmus/actions/workflows/ci.yml/badge.svg)](https://github.com/randyparrs/Litmus/actions/workflows/ci.yml)
 
 **Live demo: [litmus-4az.pages.dev](https://litmus-4az.pages.dev)** (connect a browser wallet on GenLayer Studio Next with GEN to verify).
 
